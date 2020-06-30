@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5333E14F24AB406A006D07F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E14E24AB406A006D07F7 /* AppDelegate.swift */; };
-		5333E15124AB406A006D07F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E15024AB406A006D07F7 /* SceneDelegate.swift */; };
 		5333E15324AB406A006D07F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E15224AB406A006D07F7 /* ViewController.swift */; };
 		5333E15624AB406A006D07F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5333E15424AB406A006D07F7 /* Main.storyboard */; };
 		5333E15924AB406A006D07F7 /* YuanCommunityV2ex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5333E15724AB406A006D07F7 /* YuanCommunityV2ex.xcdatamodeld */; };
@@ -21,7 +20,6 @@
 		2C16B37FF9E2D0092F979F2A /* Pods-YuanCommunityV2ex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuanCommunityV2ex.release.xcconfig"; path = "Target Support Files/Pods-YuanCommunityV2ex/Pods-YuanCommunityV2ex.release.xcconfig"; sourceTree = "<group>"; };
 		5333E14B24AB406A006D07F7 /* YuanCommunityV2ex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuanCommunityV2ex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5333E14E24AB406A006D07F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5333E15024AB406A006D07F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5333E15224AB406A006D07F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5333E15524AB406A006D07F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5333E15824AB406A006D07F7 /* YuanCommunityV2ex.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YuanCommunityV2ex.xcdatamodel; sourceTree = "<group>"; };
@@ -50,7 +48,6 @@
 				CC09CA7FC3D5AC2B0136A104 /* Pods-YuanCommunityV2ex.debug.xcconfig */,
 				2C16B37FF9E2D0092F979F2A /* Pods-YuanCommunityV2ex.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				5333E14E24AB406A006D07F7 /* AppDelegate.swift */,
-				5333E15024AB406A006D07F7 /* SceneDelegate.swift */,
 				5333E15224AB406A006D07F7 /* ViewController.swift */,
 				5333E15424AB406A006D07F7 /* Main.storyboard */,
 				5333E15A24AB406F006D07F7 /* Assets.xcassets */,
@@ -213,7 +209,6 @@
 				5333E15324AB406A006D07F7 /* ViewController.swift in Sources */,
 				5333E15924AB406A006D07F7 /* YuanCommunityV2ex.xcdatamodeld in Sources */,
 				5333E14F24AB406A006D07F7 /* AppDelegate.swift in Sources */,
-				5333E15124AB406A006D07F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
