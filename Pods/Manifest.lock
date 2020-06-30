@@ -1,0 +1,131 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - CXSwipeGestureRecognizer (1.1.0)
+  - DeviceKit (2.3.0)
+  - FDFullscreenPopGesture (1.1)
+  - Google-Mobile-Ads-SDK (7.52.0):
+    - GoogleAppMeasurement (~> 6.0)
+  - GoogleAppMeasurement (6.1.6):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleUtilities/AppDelegateSwizzler (6.3.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.3.2)
+  - GoogleUtilities/Logger (6.3.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.3.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.3.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.3.2)"
+  - GoogleUtilities/Reachability (6.3.2):
+    - GoogleUtilities/Logger
+  - Ji (5.0.0)
+  - KeychainSwift (18.0.0)
+  - Kingfisher (4.10.1)
+  - KVOController (1.2.0)
+  - MJRefresh (3.1.15.7)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Moya/RxSwift (13.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - ObjectMapper (3.5.1)
+  - Result (4.1.0)
+  - RxSwift (4.5.0)
+  - Shimmer (1.0.2)
+  - SnapKit (5.0.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.3.0)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - CXSwipeGestureRecognizer
+  - DeviceKit
+  - FDFullscreenPopGesture
+  - Google-Mobile-Ads-SDK
+  - Ji
+  - KeychainSwift
+  - Kingfisher (~> 4.10.0)
+  - KVOController
+  - MJRefresh (~> 3.1.15.7)
+  - Moya/RxSwift
+  - ObjectMapper
+  - Shimmer
+  - SnapKit
+  - SVProgressHUD
+  - SwiftyJSON (~> 4.3)
+  - YYText
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - CXSwipeGestureRecognizer
+    - DeviceKit
+    - FDFullscreenPopGesture
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - Ji
+    - KeychainSwift
+    - Kingfisher
+    - KVOController
+    - MJRefresh
+    - Moya
+    - nanopb
+    - ObjectMapper
+    - Result
+    - RxSwift
+    - Shimmer
+    - SnapKit
+    - SVProgressHUD
+    - SwiftyJSON
+    - YYText
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  CXSwipeGestureRecognizer: 5a53916aa69e85d041c35b5fc2180ff0bfe6333b
+  DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  Google-Mobile-Ads-SDK: 62f6244637306cb60a1b4adda067f53224c7a860
+  GoogleAppMeasurement: dfe55efa543e899d906309eaaac6ca26d249862f
+  GoogleUtilities: 547a86735c6f0ee30ad17e94df4fc21f616b71cb
+  Ji: d795fed288fe78658b404c88946d753b17d8d7f4
+  KeychainSwift: c46e1438d121e47459fb304ac88c5e058a2a91ed
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: c489eed8ba72f4fd2744ec41d8c4227e2919fe09
+
+COCOAPODS: 1.7.3

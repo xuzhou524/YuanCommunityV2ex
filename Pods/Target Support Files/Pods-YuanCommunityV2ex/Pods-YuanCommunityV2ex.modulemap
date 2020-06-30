@@ -1,0 +1,6 @@
+module Pods_YuanCommunityV2ex {
+  umbrella header "Pods-YuanCommunityV2ex-umbrella.h"
+
+  export *
+  module * { export * }
+}

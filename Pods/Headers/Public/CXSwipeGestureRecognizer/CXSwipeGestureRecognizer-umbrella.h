@@ -1,0 +1,1 @@
+../../../Target Support Files/CXSwipeGestureRecognizer/CXSwipeGestureRecognizer-umbrella.h
