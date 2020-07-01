@@ -30,8 +30,6 @@ extension TopicListApi: V2EXTargetType {
             return ["p": page]
         case let .nodeTopicList(_, page):
             return ["p": page]
-//        default:
-//            return nil
         }
     }
     
@@ -46,8 +44,6 @@ extension TopicListApi: V2EXTargetType {
             return "/my/topics"
         case let .nodeTopicList(nodeName, _):
             return "/go/\(nodeName)"
-//        default:
-//            return ""
         }
     }
     
