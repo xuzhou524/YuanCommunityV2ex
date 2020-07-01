@@ -89,7 +89,7 @@ class TopicDetailWebViewContentCell: UITableViewCell {
         
         if var html = model.topicContent {
 
-            let style = "<style>" + V2Style.sharedInstance.CSS + "</style></head>"
+            let style = "<style>" + XZStyle.sharedInstance.CSS + "</style></head>"
             html =  HTMLHEADER + style  + html + "</html>"
             
             self.contentWebView?.loadHTMLString(html, baseURL: URL(string: "https://www.v2ex.com"))

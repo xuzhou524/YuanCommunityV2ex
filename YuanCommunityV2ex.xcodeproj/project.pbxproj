@@ -23,17 +23,17 @@
 		5333E18524AC2142006D07F7 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E18424AC2142006D07F7 /* BaseModel.swift */; };
 		5333E18724AC21DA006D07F7 /* YuanCommunUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E18624AC21DA006D07F7 /* YuanCommunUser.swift */; };
 		5333E18924AC2227006D07F7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E18824AC2227006D07F7 /* UserModel.swift */; };
-		5333E18B24AC2285006D07F7 /* V2Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E18A24AC2284006D07F7 /* V2Response.swift */; };
+		5333E18B24AC2285006D07F7 /* XZResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E18A24AC2284006D07F7 /* XZResponse.swift */; };
 		5333E19A24AC2302006D07F7 /* V2EXMentionedBindingParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E18C24AC2300006D07F7 /* V2EXMentionedBindingParser.swift */; };
 		5333E19B24AC2302006D07F7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E18D24AC2300006D07F7 /* UIView+Extension.swift */; };
 		5333E19C24AC2302006D07F7 /* XZSwiftColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E18E24AC2300006D07F7 /* XZSwiftColor.swift */; };
-		5333E19D24AC2302006D07F7 /* V2Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E18F24AC2300006D07F7 /* V2Client.swift */; };
+		5333E19D24AC2302006D07F7 /* XZClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E18F24AC2300006D07F7 /* XZClient.swift */; };
 		5333E19E24AC2302006D07F7 /* V2LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19024AC2300006D07F7 /* V2LeftAlignedCollectionViewFlowLayout.swift */; };
-		5333E1A124AC2302006D07F7 /* V2UsersKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19324AC2301006D07F7 /* V2UsersKeychain.swift */; };
+		5333E1A124AC2302006D07F7 /* YuanCommunUserKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19324AC2301006D07F7 /* YuanCommunUserKeychain.swift */; };
 		5333E1A224AC2302006D07F7 /* XZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19424AC2301006D07F7 /* XZSettings.swift */; };
 		5333E1A324AC2302006D07F7 /* V2ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19524AC2301006D07F7 /* V2ProgressHUD.swift */; };
 		5333E1A424AC2302006D07F7 /* V2ex+Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19624AC2301006D07F7 /* V2ex+Define.swift */; };
-		5333E1A524AC2302006D07F7 /* V2Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19724AC2301006D07F7 /* V2Style.swift */; };
+		5333E1A524AC2302006D07F7 /* XZStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19724AC2301006D07F7 /* XZStyle.swift */; };
 		5333E1A624AC2302006D07F7 /* V2HitTestSlopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19824AC2302006D07F7 /* V2HitTestSlopButton.swift */; };
 		5333E1A724AC2302006D07F7 /* WebViewImageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19924AC2302006D07F7 /* WebViewImageProtocol.swift */; };
 		5333E1B024AC232C006D07F7 /* JSTools.js in Resources */ = {isa = PBXBuildFile; fileRef = 5333E1A824AC232B006D07F7 /* JSTools.js */; };
@@ -46,7 +46,7 @@
 		5333E1B724AC232C006D07F7 /* Request+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1AF24AC232C006D07F7 /* Request+Extension.swift */; };
 		5333E1B924AC2333006D07F7 /* UITableView+FINAutomaticHeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1B824AC2333006D07F7 /* UITableView+FINAutomaticHeightCell.swift */; };
 		5333E1BC24AC24DA006D07F7 /* Observable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1BA24AC24DA006D07F7 /* Observable+Extension.swift */; };
-		5333E1BD24AC24DA006D07F7 /* V2EXTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1BB24AC24DA006D07F7 /* V2EXTargetType.swift */; };
+		5333E1BD24AC24DA006D07F7 /* XZTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1BB24AC24DA006D07F7 /* XZTargetType.swift */; };
 		5333E1BF24AC25BD006D07F7 /* XZWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1BE24AC25BD006D07F7 /* XZWebViewViewController.swift */; };
 		5333E1E324AC26B1006D07F7 /* LeftNodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1C024AC26AC006D07F7 /* LeftNodeTableViewCell.swift */; };
 		5333E1E424AC26B1006D07F7 /* TopicDetailToolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1C124AC26AD006D07F7 /* TopicDetailToolCell.swift */; };
@@ -133,17 +133,17 @@
 		5333E18424AC2142006D07F7 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		5333E18624AC21DA006D07F7 /* YuanCommunUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuanCommunUser.swift; sourceTree = "<group>"; };
 		5333E18824AC2227006D07F7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		5333E18A24AC2284006D07F7 /* V2Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2Response.swift; sourceTree = "<group>"; };
+		5333E18A24AC2284006D07F7 /* XZResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZResponse.swift; sourceTree = "<group>"; };
 		5333E18C24AC2300006D07F7 /* V2EXMentionedBindingParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXMentionedBindingParser.swift; sourceTree = "<group>"; };
 		5333E18D24AC2300006D07F7 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		5333E18E24AC2300006D07F7 /* XZSwiftColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZSwiftColor.swift; sourceTree = "<group>"; };
-		5333E18F24AC2300006D07F7 /* V2Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2Client.swift; sourceTree = "<group>"; };
+		5333E18F24AC2300006D07F7 /* XZClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZClient.swift; sourceTree = "<group>"; };
 		5333E19024AC2300006D07F7 /* V2LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		5333E19324AC2301006D07F7 /* V2UsersKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2UsersKeychain.swift; sourceTree = "<group>"; };
+		5333E19324AC2301006D07F7 /* YuanCommunUserKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YuanCommunUserKeychain.swift; sourceTree = "<group>"; };
 		5333E19424AC2301006D07F7 /* XZSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZSettings.swift; sourceTree = "<group>"; };
 		5333E19524AC2301006D07F7 /* V2ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2ProgressHUD.swift; sourceTree = "<group>"; };
 		5333E19624AC2301006D07F7 /* V2ex+Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "V2ex+Define.swift"; sourceTree = "<group>"; };
-		5333E19724AC2301006D07F7 /* V2Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2Style.swift; sourceTree = "<group>"; };
+		5333E19724AC2301006D07F7 /* XZStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZStyle.swift; sourceTree = "<group>"; };
 		5333E19824AC2302006D07F7 /* V2HitTestSlopButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2HitTestSlopButton.swift; sourceTree = "<group>"; };
 		5333E19924AC2302006D07F7 /* WebViewImageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewImageProtocol.swift; sourceTree = "<group>"; };
 		5333E1A824AC232B006D07F7 /* JSTools.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSTools.js; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		5333E1AF24AC232C006D07F7 /* Request+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Request+Extension.swift"; sourceTree = "<group>"; };
 		5333E1B824AC2333006D07F7 /* UITableView+FINAutomaticHeightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+FINAutomaticHeightCell.swift"; sourceTree = "<group>"; };
 		5333E1BA24AC24DA006D07F7 /* Observable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Extension.swift"; sourceTree = "<group>"; };
-		5333E1BB24AC24DA006D07F7 /* V2EXTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXTargetType.swift; sourceTree = "<group>"; };
+		5333E1BB24AC24DA006D07F7 /* XZTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZTargetType.swift; sourceTree = "<group>"; };
 		5333E1BE24AC25BD006D07F7 /* XZWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZWebViewViewController.swift; sourceTree = "<group>"; };
 		5333E1C024AC26AC006D07F7 /* LeftNodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftNodeTableViewCell.swift; sourceTree = "<group>"; };
 		5333E1C124AC26AD006D07F7 /* TopicDetailToolCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailToolCell.swift; sourceTree = "<group>"; };
@@ -365,18 +365,18 @@
 				5333E17E24AC1FBD006D07F7 /* XZWebViewImageProtocol.swift */,
 				5333E18624AC21DA006D07F7 /* YuanCommunUser.swift */,
 				5333E18D24AC2300006D07F7 /* UIView+Extension.swift */,
-				5333E18F24AC2300006D07F7 /* V2Client.swift */,
+				5333E18F24AC2300006D07F7 /* XZClient.swift */,
 				5333E19624AC2301006D07F7 /* V2ex+Define.swift */,
 				5333E18C24AC2300006D07F7 /* V2EXMentionedBindingParser.swift */,
 				5333E19424AC2301006D07F7 /* XZSettings.swift */,
 				5333E19824AC2302006D07F7 /* V2HitTestSlopButton.swift */,
 				5333E19024AC2300006D07F7 /* V2LeftAlignedCollectionViewFlowLayout.swift */,
 				5333E19524AC2301006D07F7 /* V2ProgressHUD.swift */,
-				5333E19724AC2301006D07F7 /* V2Style.swift */,
-				5333E19324AC2301006D07F7 /* V2UsersKeychain.swift */,
+				5333E19724AC2301006D07F7 /* XZStyle.swift */,
+				5333E19324AC2301006D07F7 /* YuanCommunUserKeychain.swift */,
 				5333E19924AC2302006D07F7 /* WebViewImageProtocol.swift */,
 				5333E18E24AC2300006D07F7 /* XZSwiftColor.swift */,
-				5333E18A24AC2284006D07F7 /* V2Response.swift */,
+				5333E18A24AC2284006D07F7 /* XZResponse.swift */,
 				5333E1AA24AC232B006D07F7 /* AnalyzeURLHelper.swift */,
 				5333E1A824AC232B006D07F7 /* JSTools.js */,
 				5333E1AF24AC232C006D07F7 /* Request+Extension.swift */,
@@ -387,7 +387,7 @@
 				5333E1AC24AC232B006D07F7 /* UITableView+Extension.swift */,
 				5333E1B824AC2333006D07F7 /* UITableView+FINAutomaticHeightCell.swift */,
 				5333E1BA24AC24DA006D07F7 /* Observable+Extension.swift */,
-				5333E1BB24AC24DA006D07F7 /* V2EXTargetType.swift */,
+				5333E1BB24AC24DA006D07F7 /* XZTargetType.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -547,7 +547,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5333E19C24AC2302006D07F7 /* XZSwiftColor.swift in Sources */,
-				5333E1A124AC2302006D07F7 /* V2UsersKeychain.swift in Sources */,
+				5333E1A124AC2302006D07F7 /* YuanCommunUserKeychain.swift in Sources */,
 				5333E23A24AC2795006D07F7 /* NotificationsModel.swift in Sources */,
 				5333E1F724AC26B1006D07F7 /* V2Photo.swift in Sources */,
 				5333E1B124AC232C006D07F7 /* String+Avatar.swift in Sources */,
@@ -591,7 +591,7 @@
 				5333E18924AC2227006D07F7 /* UserModel.swift in Sources */,
 				5333E1F124AC26B1006D07F7 /* V2RefreshFooter.swift in Sources */,
 				5333E22224AC2739006D07F7 /* BranchTopicListViewController.swift in Sources */,
-				5333E19D24AC2302006D07F7 /* V2Client.swift in Sources */,
+				5333E19D24AC2302006D07F7 /* XZClient.swift in Sources */,
 				5333E1F824AC26B1006D07F7 /* V2PhotoBrowserSwipeInteractiveTransition.swift in Sources */,
 				5333E17424AC1C71006D07F7 /* LDTabBar.m in Sources */,
 				5333E22324AC2739006D07F7 /* UserViewController.swift in Sources */,
@@ -607,7 +607,7 @@
 				5333E1A724AC2302006D07F7 /* WebViewImageProtocol.swift in Sources */,
 				5333E22624AC2739006D07F7 /* RelevantCommentsViewController.swift in Sources */,
 				5333E18124AC205B006D07F7 /* MainViewController.swift in Sources */,
-				5333E18B24AC2285006D07F7 /* V2Response.swift in Sources */,
+				5333E18B24AC2285006D07F7 /* XZResponse.swift in Sources */,
 				5333E1EF24AC26B1006D07F7 /* BaseDetailTableViewCell.swift in Sources */,
 				5333E1F224AC26B1006D07F7 /* HomeTopicListTableViewCell.swift in Sources */,
 				5333E1EE24AC26B1006D07F7 /* TopicDetailWebViewContentCell.swift in Sources */,
@@ -615,7 +615,7 @@
 				5333E19E24AC2302006D07F7 /* V2LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				5333E19A24AC2302006D07F7 /* V2EXMentionedBindingParser.swift in Sources */,
 				5333E1FB24AC26B1006D07F7 /* NotificationMenuButton.swift in Sources */,
-				5333E1BD24AC24DA006D07F7 /* V2EXTargetType.swift in Sources */,
+				5333E1BD24AC24DA006D07F7 /* XZTargetType.swift in Sources */,
 				5333E20424AC26B1006D07F7 /* NodeTableViewCell.swift in Sources */,
 				5333E20024AC26B1006D07F7 /* MemberReplyCell.swift in Sources */,
 				5333E1B424AC232C006D07F7 /* UITableView+Extension.swift in Sources */,
@@ -630,7 +630,7 @@
 				5333E14F24AB406A006D07F7 /* AppDelegate.swift in Sources */,
 				5333E1E724AC26B1006D07F7 /* NodeCollectionReusableView.swift in Sources */,
 				5333E21924AC2739006D07F7 /* MyCollectionViewController.swift in Sources */,
-				5333E1A524AC2302006D07F7 /* V2Style.swift in Sources */,
+				5333E1A524AC2302006D07F7 /* XZStyle.swift in Sources */,
 				5333E1E324AC26B1006D07F7 /* LeftNodeTableViewCell.swift in Sources */,
 				5333E1ED24AC26B1006D07F7 /* V2SpacingLabel.swift in Sources */,
 				5333E1B324AC232C006D07F7 /* UIImage+Extension.swift in Sources */,

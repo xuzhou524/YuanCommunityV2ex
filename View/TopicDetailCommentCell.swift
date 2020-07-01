@@ -171,7 +171,7 @@ class TopicDetailCommentCell: UITableViewCell{
         if let _ = self.itemModel , let username = itemModel?.userName {
             let memberViewController = MemberViewController()
             memberViewController.username = username
-            V2Client.sharedInstance.topNavigationController.pushViewController(memberViewController, animated: true)
+            XZClient.sharedInstance.topNavigationController.pushViewController(memberViewController, animated: true)
         }
     }
     func bind(_ model:TopicCommentModel){
@@ -210,7 +210,7 @@ extension TopicDetailCommentCell : V2CommentAttachmentImageTapDelegate ,V2PhotoB
     func V2CommentAttachmentImageSingleTap(_ imageView: V2CommentAttachmentImage) {
         let photoBrowser = V2PhotoBrowser(delegate: self)
         photoBrowser.currentPageIndex = imageView.index
-        V2Client.sharedInstance.topNavigationController.present(photoBrowser, animated: true, completion: nil)
+        XZClient.sharedInstance.topNavigationController.present(photoBrowser, animated: true, completion: nil)
     }
     
     //V2PhotoBrowser Delegate

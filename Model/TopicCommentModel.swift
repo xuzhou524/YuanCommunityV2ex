@@ -187,7 +187,7 @@ class TopicCommentModel: NSObject,BaseHtmlModelProtocol {
 //MARK: - Request
 extension TopicCommentModel {
     class func replyWithTopicId(_ topic:TopicDetailModel, content:String,
-                                completionHandler: @escaping (V2Response) -> Void){
+                                completionHandler: @escaping (XZResponse) -> Void){
         let requestPath = "t/" + topic.topicId!
         let url = V2EXURL + requestPath
         
@@ -201,14 +201,14 @@ extension TopicCommentModel {
                 Alamofire.request(url, method: .post, parameters: prames, headers: MOBILE_CLIENT_HEADERS).responseJiHtml { (response) -> Void in
                     let url = response.response?.url
                     if url?.path.hasSuffix(requestPath) == true && url?.fragment?.hasPrefix("reply") == true{   
-                       completionHandler(V2Response(success: true))
+                       completionHandler(XZResponse(success: true))
                     }
                     else if let problems = response.result.value?.xPath("//*[@class='problem']/ul/li") {
                         let problemStr = problems.map{ $0.content ?? "回帖失败" }.joined(separator: "\n")
-                        completionHandler(V2Response(success: false,message: problemStr))
+                        completionHandler(XZResponse(success: false,message: problemStr))
                     }
                     else{
-                        completionHandler(V2Response(success: false,message: "请求失败"))
+                        completionHandler(XZResponse(success: false,message: "请求失败"))
                     }
                     //不管成功还是失败，更新一下once
                     if let jiHtml = response .result.value{
@@ -217,23 +217,23 @@ extension TopicCommentModel {
                 }
             }
             else{
-                completionHandler(V2Response(success: false,message: "获取once失败，请重试"))
+                completionHandler(XZResponse(success: false,message: "获取once失败，请重试"))
             }
         }
     }
     
-    class func replyThankWithReplyId(_ replyId:String , token:String ,completionHandler: @escaping (V2Response) -> Void) {
+    class func replyThankWithReplyId(_ replyId:String , token:String ,completionHandler: @escaping (XZResponse) -> Void) {
         
         _ = YuanCommunityApi.provider.requestAPI(.thankReply(replyId: replyId, once: token))
             .filterResponseError().subscribe(onNext: { (response) in
             if response["success"].boolValue {
-                completionHandler(V2Response(success: true))
+                completionHandler(XZResponse(success: true))
             }
             else{
-                completionHandler(V2Response(success: false))
+                completionHandler(XZResponse(success: false))
             }
         }, onError: { (error) in
-            completionHandler(V2Response(success: false))
+            completionHandler(XZResponse(success: false))
         })
     }
 }

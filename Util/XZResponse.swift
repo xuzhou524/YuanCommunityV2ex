@@ -1,5 +1,5 @@
 //
-//  V2Response.swift
+//  XZResponse.swift
 //  YuanCommunityV2ex
 //
 //  Created by gozap on 2020/7/1.
@@ -13,7 +13,7 @@ enum ErrorCode:Int {
     case twoFA ;
 }
 
-class V2Response: NSObject {
+class XZResponse: NSObject {
     var success:Bool = false
     var message:String = "No message"
     init(success:Bool,message:String?) {
@@ -29,7 +29,7 @@ class V2Response: NSObject {
     }
 }
 
-class V2ValueResponse<T>: V2Response {
+class XZValueResponse<T>: XZResponse {
     var value:T?
     var code:ErrorCode = .none
     

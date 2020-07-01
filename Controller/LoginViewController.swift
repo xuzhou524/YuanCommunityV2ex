@@ -134,7 +134,7 @@ class LoginViewController: UIViewController {
                             passwordFieldName: passwordStr ,
                             codeFieldName:codeStr,
                             code:code){
-                (response:V2ValueResponse<String> , is2FALoggedIn:Bool) -> Void in
+                (response:XZValueResponse<String> , is2FALoggedIn:Bool) -> Void in
                 if response.success {
                     V2Success("登录成功")
                     let username = response.value!

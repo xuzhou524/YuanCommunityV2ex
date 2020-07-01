@@ -22,7 +22,7 @@ enum YuanCommunityApi {
     case thankTopic(topicId:String, once:String)
 }
 
-extension YuanCommunityApi: V2EXTargetType {
+extension YuanCommunityApi: XZTargetType {
 
     var method: Moya.Method {
         switch self {

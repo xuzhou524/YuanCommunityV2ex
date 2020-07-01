@@ -183,7 +183,7 @@ class HomeTopicListTableViewCell: UITableViewCell {
         if let _ = self.itemModel , let username = itemModel?.userName {
             let memberViewController = MemberViewController()
             memberViewController.username = username
-            V2Client.sharedInstance.topNavigationController.pushViewController(memberViewController, animated: true)
+            XZClient.sharedInstance.topNavigationController.pushViewController(memberViewController, animated: true)
         }
     }
     

@@ -146,7 +146,7 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
     // MARK: 获取用户信息
     func getUserInfo(_ userName:String){
-        UserModel.getUserInfoByUsername(userName) {(response:V2ValueResponse<UserModel>) -> Void in
+        UserModel.getUserInfoByUsername(userName) {(response:XZValueResponse<UserModel>) -> Void in
             if response.success {
                 self.tableView.reloadData()
                 NSLog("获取用户信息成功")

@@ -1,5 +1,5 @@
 //
-//  V2Style.swift
+//  XZStyle.swift
 //  YuanCommunityV2ex
 //
 //  Created by xuzhou on 20/05/18.
@@ -19,9 +19,9 @@ private let LIGHT_CSS = (try! String(contentsOfFile: Bundle.main.path(forResourc
 
 private let kFONTSCALE = "kFontScale"
 
-/// 自动维护APP的CSS文件 ,外界只需调用 V2Style.sharedInstance.CSS 即可取得APP所需要的CSS
-class V2Style: NSObject {
-    static let sharedInstance = V2Style()
+/// 自动维护APP的CSS文件 ,外界只需调用 XZStyle.sharedInstance.CSS 即可取得APP所需要的CSS
+class XZStyle: NSObject {
+    static let sharedInstance = XZStyle()
     
     fileprivate var _fontScale:Float = 1.0
     @objc dynamic var fontScale:Float {

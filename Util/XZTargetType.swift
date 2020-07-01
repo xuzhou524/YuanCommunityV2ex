@@ -1,5 +1,5 @@
 //
-//  V2EXTargetType.swift
+//  XZTargetType.swift
 //  YuanCommunityV2ex
 //
 //  Created by xuzhou on 20/05/27.
@@ -14,11 +14,11 @@ import Result
 //保存全局Providers
 fileprivate var retainProviders:[String: Any] = [:]
 
-protocol V2EXTargetType: TargetType {
+protocol XZTargetType: TargetType {
     var parameters: [String: Any]? { get }
 }
 
-extension V2EXTargetType {
+extension XZTargetType {
     var headers: [String : String]? {
         return MOBILE_CLIENT_HEADERS
     }
@@ -99,7 +99,7 @@ fileprivate class LogPlugin: PluginType{
     func willSend(_ request: RequestType, target: TargetType) {
         print("\n-------------------\n准备请求: \(target.path)")
         print("请求方式: \(target.method.rawValue)")
-        if let params = (target as? V2EXTargetType)?.parameters {
+        if let params = (target as? XZTargetType)?.parameters {
             print(params)
         }
         print("\n")

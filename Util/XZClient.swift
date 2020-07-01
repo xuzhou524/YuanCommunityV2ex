@@ -1,5 +1,5 @@
 //
-//  V2Client.swift
+//  XZClient.swift
 //  YuanCommunityV2ex
 //
 //  Created by xuzhou on 20/05/17.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class V2Client: NSObject {
-    static let sharedInstance = V2Client()
+class XZClient: NSObject {
+    static let sharedInstance = XZClient()
     
     var window : UIWindow? = nil
     
@@ -19,7 +19,7 @@ class V2Client: NSObject {
     var topNavigationController : UINavigationController {
         get{
             let rooVC = centerTabBarController?.viewControllers?[centerTabBarController?.selectedIndex ?? 0]
-            return V2Client.getTopNavigationController(rooVC as! UINavigationController)
+            return XZClient.getTopNavigationController(rooVC as! UINavigationController)
         }
     }
     

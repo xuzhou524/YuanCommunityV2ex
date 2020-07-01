@@ -122,17 +122,17 @@ class YuanCommunUser: NSObject {
 
      - parameter url:               有once存在的url
      */
-    func getOnce(_ url:String = V2EXURL+"signin" , completionHandler: @escaping (V2Response) -> Void) {
+    func getOnce(_ url:String = V2EXURL+"signin" , completionHandler: @escaping (XZResponse) -> Void) {
         Alamofire.request(url, headers: MOBILE_CLIENT_HEADERS).responseJiHtml {
             (response) -> Void in
             if let jiHtml = response .result.value{
                 if let once = jiHtml.xPath("//*[@name='once'][1]")?.first?["value"]{
                     self.once = once
-                    completionHandler(V2Response(success: true))
+                    completionHandler(XZResponse(success: true))
                     return;
                 }
             }
-            completionHandler(V2Response(success: false))
+            completionHandler(XZResponse(success: false))
         }
     }
 

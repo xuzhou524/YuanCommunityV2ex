@@ -118,7 +118,7 @@ struct UrlActionModel: AnalyzeURLActionProtocol{
     }
     func run() {
         let controller = XZWebViewViewController(url: url)
-        V2Client.sharedInstance.topNavigationController.pushViewController(controller, animated: true)
+        XZClient.sharedInstance.topNavigationController.pushViewController(controller, animated: true)
     }
 }
 
@@ -135,7 +135,7 @@ struct MemberActionModel: AnalyzeURLActionProtocol {
     func run() {
         let memberViewController = MemberViewController()
         memberViewController.username = username
-        V2Client.sharedInstance.topNavigationController.pushViewController(memberViewController, animated: true)
+        XZClient.sharedInstance.topNavigationController.pushViewController(memberViewController, animated: true)
     }
 }
 
@@ -161,7 +161,7 @@ struct TopicActionModel: AnalyzeURLActionProtocol {
     func run() {
         let controller = PostDetailViewController()
         controller.topicId = topicID
-        V2Client.sharedInstance.topNavigationController.pushViewController(controller, animated: true)
+        XZClient.sharedInstance.topNavigationController.pushViewController(controller, animated: true)
     }
 }
 
@@ -191,7 +191,7 @@ struct NodeActionModel: AnalyzeURLActionProtocol {
         
         let controller = BranchTopicListViewController()
         controller.node = node
-        V2Client.sharedInstance.topNavigationController.pushViewController(controller, animated: true)
+        XZClient.sharedInstance.topNavigationController.pushViewController(controller, animated: true)
     }
 }
 

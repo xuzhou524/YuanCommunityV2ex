@@ -61,7 +61,7 @@ extension UserModel{
     class func Login(_ username:String,password:String ,once:String,
                      usernameFieldName:String ,passwordFieldName:String,
                      codeFieldName:String, code:String,
-                     completionHandler: @escaping (V2ValueResponse<String>, Bool) -> Void){
+                     completionHandler: @escaping (XZValueResponse<String>, Bool) -> Void){
         let prames = [
             "once":once,
             "next":"/",
@@ -82,22 +82,22 @@ extension UserModel{
                     if let altUsername = avatarImg.attributes["alt"]{
                         //用户开启了两步验证
                         if let url = response.response?.url?.absoluteString, url.contains("2fa") {
-                            completionHandler(V2ValueResponse(value: altUsername, success: true),true)
+                            completionHandler(XZValueResponse(value: altUsername, success: true),true)
                         }
                             //登陆完成
                         else{
-                            completionHandler(V2ValueResponse(value: altUsername, success: true),false)
+                            completionHandler(XZValueResponse(value: altUsername, success: true),false)
                         }
                         return;
                     }
                 }
                 else if let errMessage = jiHtml.xPath("//*[contains(@class, 'problem')]/ul/li")?.first?.value , errMessage.count > 0 {
-                    completionHandler(V2ValueResponse(success: false,message: errMessage),false)
+                    completionHandler(XZValueResponse(success: false,message: errMessage),false)
                     return
                 }
                 
             }
-            completionHandler(V2ValueResponse(success: false,message: "登录失败"),false)
+            completionHandler(XZValueResponse(success: false,message: "登录失败"),false)
         }
     }
     
@@ -130,7 +130,7 @@ extension UserModel{
         }
     }
     
-    class func getUserInfoByUsername(_ username:String ,completionHandler:((V2ValueResponse<UserModel>) -> Void)? ){
+    class func getUserInfoByUsername(_ username:String ,completionHandler:((XZValueResponse<UserModel>) -> Void)? ){
         
         _ = YuanCommunityApi.provider.requestAPI(.getUserInfo(username: username))
             .mapResponseToObj(UserModel.self)
@@ -140,10 +140,10 @@ extension UserModel{
                 if let avatar = userModel.avatar_large?.avatarString {
                     YuanCommunUserKeychain.sharedInstance.update(username, password: nil, avatar: avatar )
                 }
-                completionHandler?(V2ValueResponse(value: userModel, success: true))
+                completionHandler?(XZValueResponse(value: userModel, success: true))
                 return ;
             }, onError: { (error) in
-                completionHandler?(V2ValueResponse(success: false,message: "获取用户信息失败"))
+                completionHandler?(XZValueResponse(success: false,message: "获取用户信息失败"))
             });
     }
     

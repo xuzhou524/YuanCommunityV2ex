@@ -92,7 +92,7 @@ class MemberModel: NSObject ,BaseHtmlModelProtocol{
         }
     }
     
-    class func getMemberInfo(_ username:String , completionHandler: ((V2ValueResponse<MemberModel>) -> Void)? = nil) {
+    class func getMemberInfo(_ username:String , completionHandler: ((XZValueResponse<MemberModel>) -> Void)? = nil) {
     
         let url = V2EXURL + "member/" + username
         Alamofire.request(url, headers: MOBILE_CLIENT_HEADERS).responseJiHtml { (response) -> Void in
@@ -119,13 +119,13 @@ class MemberModel: NSObject ,BaseHtmlModelProtocol{
                         }
                     }
                     
-                    completionHandler?(V2ValueResponse(value: member, success: true))
+                    completionHandler?(XZValueResponse(value: member, success: true))
                     
                     
                 }
             }
             
-            completionHandler?(V2ValueResponse(success: false))
+            completionHandler?(XZValueResponse(success: false))
         }
     }
     
@@ -210,12 +210,12 @@ extension MemberModel {
     class func follow(_ userId:String,
                 userToken:String,
                 type:MemberModel.FollowState,
-        completionHandler: ((V2Response) -> Void)?
+        completionHandler: ((XZResponse) -> Void)?
         ){
         let action = type == .followed ? "follow/" : "unfollow/"
         let url = V2EXURL + action + userId + "?once=" + userToken
         Alamofire.request(url, headers: MOBILE_CLIENT_HEADERS).responseJiHtml { (response) in
-            completionHandler?(V2Response(success: response.result.isSuccess))
+            completionHandler?(XZResponse(success: response.result.isSuccess))
         }
     }
     
@@ -229,12 +229,12 @@ extension MemberModel {
     class func block(_ userId:String,
                       userToken:String,
                       type:MemberModel.BlockState,
-                      completionHandler: ((V2Response) -> Void)?
+                      completionHandler: ((XZResponse) -> Void)?
         ){
         let action = type == .blocked ? "block/" : "unblock/"
         let url = V2EXURL + action + userId + "?t=" + userToken
         Alamofire.request(url, headers: MOBILE_CLIENT_HEADERS).responseJiHtml { (response) in
-            completionHandler?(V2Response(success: response.result.isSuccess))
+            completionHandler?(XZResponse(success: response.result.isSuccess))
         }
     }
 }

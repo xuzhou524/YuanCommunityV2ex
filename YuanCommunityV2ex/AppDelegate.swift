@@ -47,8 +47,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor.white
         self.window?.makeKeyAndVisible()
         self.window?.rootViewController = tabBarController
-        V2Client.sharedInstance.window = self.window
-        V2Client.sharedInstance.centerTabBarController = tabBarController
+        XZClient.sharedInstance.window = self.window
+        XZClient.sharedInstance.centerTabBarController = tabBarController
         
         SVProgressHUD.setForegroundColor(UIColor(white: 1, alpha: 1))
         SVProgressHUD.setBackgroundColor(UIColor(white: 0.15, alpha: 0.85))

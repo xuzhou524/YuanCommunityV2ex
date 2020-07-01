@@ -84,13 +84,13 @@ class TopicDetailModel:NSObject,BaseHtmlModelProtocol {
 extension TopicDetailModel {
     class func getTopicDetailById(
         _ topicId: String,
-        completionHandler: @escaping (V2ValueResponse<(TopicDetailModel?,[TopicCommentModel])>) -> Void
+        completionHandler: @escaping (XZValueResponse<(TopicDetailModel?,[TopicCommentModel])>) -> Void
         )->Void{
         
         let url = V2EXURL + "t/" + topicId + "?p=1"
         Alamofire.request(url, headers: MOBILE_CLIENT_HEADERS).responseJiHtml { (response) -> Void in
             if response.result.isFailure {
-                completionHandler(V2ValueResponse(success: false, message: response.result.error?.localizedFailureReason ?? "请求失败"))
+                completionHandler(XZValueResponse(success: false, message: response.result.error?.localizedFailureReason ?? "请求失败"))
                 return
             }
             var topicModel: TopicDetailModel? = nil
@@ -125,7 +125,7 @@ extension TopicDetailModel {
                 YuanCommunUser.sharedInstance.getNotificationsCount(jiHtml.rootNode!)
             }
             
-            let t = V2ValueResponse<(TopicDetailModel?,[TopicCommentModel])>(value:(topicModel,topicCommentsArray), success: response.result.isSuccess)
+            let t = XZValueResponse<(TopicDetailModel?,[TopicCommentModel])>(value:(topicModel,topicCommentsArray), success: response.result.isSuccess)
             
             completionHandler(t);
         }
@@ -134,7 +134,7 @@ extension TopicDetailModel {
     class func getTopicCommentsById(
         _ topicId: String,
         page:Int,
-        completionHandler: @escaping (V2ValueResponse<[TopicCommentModel]>) -> Void
+        completionHandler: @escaping (XZValueResponse<[TopicCommentModel]>) -> Void
         ) {
         let url = V2EXURL + "t/" + topicId + "?p=\(page)"
         Alamofire.request(url, headers: MOBILE_CLIENT_HEADERS).responseJiHtml { (response) -> Void in
@@ -148,7 +148,7 @@ extension TopicDetailModel {
                 }
                 
             }
-            let t = V2ValueResponse(value: topicCommentsArray, success: response.result.isSuccess)
+            let t = XZValueResponse(value: topicCommentsArray, success: response.result.isSuccess)
             completionHandler(t);
         }
     }
@@ -156,18 +156,18 @@ extension TopicDetailModel {
     /**
      感谢主题
      */
-    class func topicThankWithTopicId(_ topicId:String , token:String ,completionHandler: @escaping (V2Response) -> Void) {
+    class func topicThankWithTopicId(_ topicId:String , token:String ,completionHandler: @escaping (XZResponse) -> Void) {
         
         _ = YuanCommunityApi.provider.requestAPI(.thankTopic(topicId: topicId, once: token))
             .filterResponseError().subscribe(onNext: { (response) in
             if response["success"].boolValue {
-                completionHandler(V2Response(success: true))
+                completionHandler(XZResponse(success: true))
             }
             else{
-                completionHandler(V2Response(success: false, message: response["message"].rawString() ?? ""))
+                completionHandler(XZResponse(success: false, message: response["message"].rawString() ?? ""))
             }
         }, onError: { (error) in
-            completionHandler(V2Response(success: false))
+            completionHandler(XZResponse(success: false))
         })
         
     }
@@ -175,37 +175,37 @@ extension TopicDetailModel {
     /**
      收藏主题
      */
-    class func favoriteTopicWithTopicId(_ topicId:String , token:String ,completionHandler: @escaping (V2Response) -> Void) {
+    class func favoriteTopicWithTopicId(_ topicId:String , token:String ,completionHandler: @escaping (XZResponse) -> Void) {
         let url  = V2EXURL + "favorite/topic/" + topicId + "?t=" + token
         Alamofire.request(url, headers: MOBILE_CLIENT_HEADERS).responseString { (response: DataResponse<String>) -> Void in
             if response.result.isSuccess {
-                completionHandler(V2Response(success: true))
+                completionHandler(XZResponse(success: true))
             }
             else{
-                completionHandler(V2Response(success: false))
+                completionHandler(XZResponse(success: false))
             }
         }
     }
     /**
      忽略主题
      */
-    class func ignoreTopicWithTopicId(_ topicId:String ,completionHandler: @escaping (V2Response) -> Void) {
+    class func ignoreTopicWithTopicId(_ topicId:String ,completionHandler: @escaping (XZResponse) -> Void) {
         
         YuanCommunUser.sharedInstance.getOnce { (response) -> Void in
             if response.success ,let once = YuanCommunUser.sharedInstance.once {
                 let url  = V2EXURL + "ignore/topic/" + topicId + "?once=" + once
                 Alamofire.request(url, headers: MOBILE_CLIENT_HEADERS).responseString { (response: DataResponse<String>) -> Void in
                     if response.result.isSuccess {
-                        completionHandler(V2Response(success: true))
+                        completionHandler(XZResponse(success: true))
                         return
                     }
                     else{
-                        completionHandler(V2Response(success: false))
+                        completionHandler(XZResponse(success: false))
                     }
                 }
             }
             else{
-                completionHandler(V2Response(success: false))
+                completionHandler(XZResponse(success: false))
             }
         }
     }

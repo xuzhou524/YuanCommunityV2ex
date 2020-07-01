@@ -49,7 +49,7 @@ class NodeGroupModel: NSObject ,BaseHtmlModelProtocol{
         }
     }
     
-    class func getNodes( _ completionHandler: ((V2ValueResponse<[NodeGroupModel]>) -> Void)? = nil ) {
+    class func getNodes( _ completionHandler: ((XZValueResponse<[NodeGroupModel]>) -> Void)? = nil ) {
         Alamofire.request(V2EXURL, headers: MOBILE_CLIENT_HEADERS).responseJiHtml { (response) in
             var groupArray : [NodeGroupModel] = []
             if let jiHtml = response .result.value{
@@ -59,10 +59,10 @@ class NodeGroupModel: NSObject ,BaseHtmlModelProtocol{
                         groupArray.append(group)
                     }
                 }
-                completionHandler?(V2ValueResponse(value: groupArray, success: true))
+                completionHandler?(XZValueResponse(value: groupArray, success: true))
                 return;
             }
-            completionHandler?(V2ValueResponse(success: false, message: "获取失败"))
+            completionHandler?(XZValueResponse(success: false, message: "获取失败"))
         }
     }
     

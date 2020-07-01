@@ -81,7 +81,7 @@ class PostDetailViewController: BaseViewController{
     func getData(){
         //根据 topicId 获取 帖子信息 、回复。
         TopicDetailModel.getTopicDetailById(self.topicId){
-            (response:V2ValueResponse<(TopicDetailModel?,[TopicCommentModel])>) -> Void in
+            (response:XZValueResponse<(TopicDetailModel?,[TopicCommentModel])>) -> Void in
             if response.success {
                 
                 if let aModel = response.value!.0{
