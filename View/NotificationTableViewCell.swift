@@ -73,7 +73,12 @@ class NotificationTableViewCell: UITableViewCell {
     
     /// 回复按钮
     var replyButton:UIButton = {
-        let button = UIButton.roundedButton()
+        let button = UIButton(type: .custom)
+        button.layer.masksToBounds = true
+        button.layer.cornerRadius = 3
+        button.backgroundColor  = XZSwiftColor.buttonBackgroundColor
+        button.titleLabel!.font = v2Font(14)
+        button.setTitleColor(UIColor.white, for: .normal)
         button.setTitle("回复", for: .normal)
         return button
     }()

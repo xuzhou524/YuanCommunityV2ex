@@ -9,7 +9,6 @@
 //https://github.com/mwaterfall/MWPhotoBrowser
 
 import UIKit
-//import INSImageView
 
 @objc protocol V2PhotoBrowserDelegate {
     func numberOfPhotosInPhotoBrowser(_ photoBrowser:V2PhotoBrowser) -> Int

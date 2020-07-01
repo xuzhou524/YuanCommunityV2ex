@@ -33,10 +33,6 @@ class V2LoadingView: UIView {
         }
         
         let noticeLabel = UILabel()
-        //修复BUG。做个小笔记给阅读代码的兄弟们提个醒
-        //(Int)(arc4random())
-        //上面这种写法有问题，arc4random()会返回 一个Uint32的随机数值。
-        //在32位机器上,如果随机的数大于Int.max ,转换就会crash。
         noticeLabel.text = noticeString[Int(arc4random() % UInt32(noticeString.count))]
         noticeLabel.font = v2Font(10)
         noticeLabel.textColor = XZSwiftColor.topicListDateColor
