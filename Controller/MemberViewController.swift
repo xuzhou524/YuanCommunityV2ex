@@ -198,14 +198,12 @@ class MemberViewController: UIViewController,UITableViewDelegate,UITableViewData
         }
         
         if let id = id {
-            let topicDetailController = TopicDetailViewController();
+            let topicDetailController = PostDetailViewController();
             topicDetailController.topicId = id ;
             self.navigationController?.pushViewController(topicDetailController, animated: true)
             tableView .deselectRow(at: indexPath, animated: true);
         }
-        
     }
-
 }
 
 //MARK: - Block and Follow

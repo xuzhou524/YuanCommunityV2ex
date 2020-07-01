@@ -20,7 +20,6 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
         regClass(tableView, cell: LeftNodeTableViewCell.self)
         regClass(tableView, cell: LeftNotifictionCell.self)
         
-        
         return tableView
     }()
 
@@ -126,16 +125,16 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 return
             }
             if indexPath.row == 0 {
-                let notificationsViewController = NotificationsViewController()
-                self.navigationController?.pushViewController(notificationsViewController, animated: true)
+                let messageRemindVC = MessageRemindViewController()
+                self.navigationController?.pushViewController(messageRemindVC, animated: true)
             }else if indexPath.row == 1 {
-                let favoritesViewController = FavoritesViewController()
-                self.navigationController?.pushViewController(favoritesViewController, animated: true)
+                let myCollectionVC = MyCollectionViewController()
+                self.navigationController?.pushViewController(myCollectionVC, animated: true)
             }
         }else if indexPath.section == 2 {
             if indexPath.row == 0 {
-                let nodesViewController = NodesViewController()
-                self.navigationController?.pushViewController(nodesViewController, animated: true)
+                let branchVC = BranchViewController()
+                self.navigationController?.pushViewController(branchVC, animated: true)
             }else if indexPath.row == 1 {
                 #if DEBUG
                 #else
@@ -149,7 +148,7 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
     func getUserInfo(_ userName:String){
         UserModel.getUserInfoByUsername(userName) {(response:V2ValueResponse<UserModel>) -> Void in
             if response.success {
-//                self?.tableView.reloadData()
+                self.tableView.reloadData()
                 NSLog("获取用户信息成功")
             }else{
                 NSLog("获取用户信息失败")

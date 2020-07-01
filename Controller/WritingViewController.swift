@@ -9,7 +9,6 @@
 import UIKit
 import YYText
 
-
 class WritingViewController: UIViewController ,YYTextViewDelegate {
 
     var textView:YYTextView?
@@ -41,7 +40,6 @@ class WritingViewController: UIViewController ,YYTextViewDelegate {
         self.textView!.snp.makeConstraints{ (make) -> Void in
             make.top.right.bottom.left.equalTo(self.view)
         }
-        
     }
     
     @objc func leftClick (){

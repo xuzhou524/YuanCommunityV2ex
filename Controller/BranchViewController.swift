@@ -1,5 +1,5 @@
 //
-//  NodesViewController.swift
+//  BranchViewController.swift
 //  YuanCommunityV2ex
 //
 //  Created by xuzhou on 2020/06/10.
@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class NodesViewController: BaseViewController {
+class BranchViewController: BaseViewController {
     var nodeGroupArray:[NodeGroupModel]?
     var collectionView:UICollectionView?
     override func viewDidLoad() {
@@ -40,7 +40,7 @@ class NodesViewController: BaseViewController {
 
 
 //MARK: - UICollectionViewDataSource
-extension NodesViewController : UICollectionViewDataSource {
+extension BranchViewController : UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         if let count = self.nodeGroupArray?.count{
             return count
@@ -65,7 +65,7 @@ extension NodesViewController : UICollectionViewDataSource {
 
 
 //MARK: - UICollectionViewDelegateFlowLayout
-extension NodesViewController : UICollectionViewDelegateFlowLayout {
+extension BranchViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let nodeModel = self.nodeGroupArray![indexPath.section].children[indexPath.row]
         return CGSize(width: nodeModel.width, height: 25);
@@ -80,10 +80,10 @@ extension NodesViewController : UICollectionViewDelegateFlowLayout {
 
 
 //MARK: - UICollectionViewDelegate
-extension NodesViewController : UICollectionViewDelegate {
+extension BranchViewController : UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
         let nodeModel = self.nodeGroupArray![indexPath.section].children[indexPath.row]
-        let controller = NodeTopicListViewController()
+        let controller = BranchTopicListViewController()
         controller.node = nodeModel
         self.navigationController?.pushViewController(controller, animated: true)
     }

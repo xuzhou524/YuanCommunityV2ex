@@ -1,5 +1,5 @@
 //
-//  TopicDetailViewController.swift
+//  PostDetailViewController.swift
 //  YuanCommunityV2ex
 //
 //  Created by xuzhou on 2020/06/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TopicDetailViewController: BaseViewController{
+class PostDetailViewController: BaseViewController{
     
     var topicId = "0"
     var currentPage = 1
@@ -60,7 +60,7 @@ class TopicDetailViewController: BaseViewController{
         rightButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -15)
         rightButton.setImage(UIImage(named: "ic_more_horiz_36pt"), for: .normal)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightButton)
-        rightButton.addTarget(self, action: #selector(TopicDetailViewController.rightClick), for: .touchUpInside)
+        rightButton.addTarget(self, action: #selector(PostDetailViewController.rightClick), for: .touchUpInside)
         
         self.tableView.mj_header = V2RefreshHeader(refreshingBlock: {[weak self] in
             self?.getData()
@@ -129,7 +129,7 @@ class TopicDetailViewController: BaseViewController{
        let node = NodeModel()
         node.nodeId = self.model?.node
         node.nodeName = self.model?.nodeName
-        let controller = NodeTopicListViewController()
+        let controller = BranchTopicListViewController()
         controller.node = node
         self.navigationController?.pushViewController(controller, animated: true)
     }
@@ -232,7 +232,7 @@ enum TopicDetailHeaderComponent: Int {
     case title = 0,  webViewContent, other
 }
 
-extension TopicDetailViewController: UITableViewDelegate,UITableViewDataSource {
+extension PostDetailViewController: UITableViewDelegate,UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -365,7 +365,7 @@ extension TopicDetailViewController: UITableViewDelegate,UITableViewDataSource {
 
 
 //MARK: - actionSheet
-extension TopicDetailViewController: UIActionSheetDelegate {
+extension PostDetailViewController: UIActionSheetDelegate {
     func selectedRowWithActionSheet(_ indexPath:IndexPath){
         self.tableView.deselectRow(at: indexPath, animated: true);
 
@@ -378,9 +378,9 @@ extension TopicDetailViewController: UIActionSheetDelegate {
         guard buttonIndex > 0 && buttonIndex <= 3 else{
             return
         }
-        self.perform([#selector(TopicDetailViewController.replyComment(_:)),
-                      #selector(TopicDetailViewController.thankComment(_:)),
-                      #selector(TopicDetailViewController.relevantComment(_:))][buttonIndex - 1],
+        self.perform([#selector(PostDetailViewController.replyComment(_:)),
+                      #selector(PostDetailViewController.thankComment(_:)),
+                      #selector(PostDetailViewController.relevantComment(_:))][buttonIndex - 1],
                      with: actionSheet.tag)
     }
     @objc func replyComment(_ row:NSNumber){
@@ -446,7 +446,7 @@ enum V2ActivityViewTopicDetailAction : Int {
     case block = 0, favorite, grade, share, explore
 }
 
-extension TopicDetailViewController: V2ActivityViewDataSource {
+extension PostDetailViewController: V2ActivityViewDataSource {
     func V2ActivityView(_ activityView: V2ActivityViewController, numberOfCellsInSection section: Int) -> Int {
         return 5
     }
@@ -475,7 +475,7 @@ extension TopicDetailViewController: V2ActivityViewDataSource {
             make.top.right.bottom.left.equalTo(view)
         }
         
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(TopicDetailViewController.reply)))
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(PostDetailViewController.reply)))
         
         return view
     }

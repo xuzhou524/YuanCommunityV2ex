@@ -1,5 +1,5 @@
 //
-//  NodeTopicListViewController.swift
+//  BranchTopicListViewController.swift
 //  YuanCommunityV2ex
 //
 //  Created by xuzhou on 2020/06/10.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NodeTopicListViewController: BaseViewController ,UITableViewDataSource,UITableViewDelegate  {
+class BranchTopicListViewController: BaseViewController ,UITableViewDataSource,UITableViewDelegate  {
     var node:NodeModel?
     var nodeId:String?
     var favorited:Bool = false
@@ -156,7 +156,7 @@ class NodeTopicListViewController: BaseViewController ,UITableViewDataSource,UIT
         let item = self.topicList![indexPath.row]
         
         if let id = item.topicId {
-            let topicDetailController = TopicDetailViewController();
+            let topicDetailController = PostDetailViewController();
             topicDetailController.topicId = id ;
             self.navigationController?.pushViewController(topicDetailController, animated: true)
             tableView .deselectRow(at: indexPath, animated: true);
@@ -165,7 +165,7 @@ class NodeTopicListViewController: BaseViewController ,UITableViewDataSource,UIT
 
 }
 
-extension NodeTopicListViewController {
+extension BranchTopicListViewController {
     func setupFavorite(){
         if(self.followButton != nil){
             return;

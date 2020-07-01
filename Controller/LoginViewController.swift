@@ -153,8 +153,8 @@ class LoginViewController: UIViewController {
                     UserModel.getUserInfoByUsername(username,completionHandler: nil)
                     self.dismiss(animated: true){
                         if is2FALoggedIn {
-                            let twoFaViewController = TwoFAViewController()
-                            self.navigationController?.present(twoFaViewController, animated: true, completion: nil);
+                            let validationVC = ValidationViewController()
+                            self.navigationController?.present(validationVC, animated: true, completion: nil);
                         }
                     }
                 }

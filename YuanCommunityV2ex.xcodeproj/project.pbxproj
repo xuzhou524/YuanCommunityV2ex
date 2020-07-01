@@ -81,19 +81,19 @@
 		5333E20224AC26B1006D07F7 /* TopicDetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1E024AC26B1006D07F7 /* TopicDetailHeaderCell.swift */; };
 		5333E20324AC26B1006D07F7 /* V2LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1E124AC26B1006D07F7 /* V2LoadingView.swift */; };
 		5333E20424AC26B1006D07F7 /* NodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1E224AC26B1006D07F7 /* NodeTableViewCell.swift */; };
-		5333E21824AC2739006D07F7 /* TopicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E20524AC2735006D07F7 /* TopicDetailViewController.swift */; };
-		5333E21924AC2739006D07F7 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E20624AC2735006D07F7 /* FavoritesViewController.swift */; };
+		5333E21824AC2739006D07F7 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E20524AC2735006D07F7 /* PostDetailViewController.swift */; };
+		5333E21924AC2739006D07F7 /* MyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E20624AC2735006D07F7 /* MyCollectionViewController.swift */; };
 		5333E21A24AC2739006D07F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E20724AC2736006D07F7 /* LoginViewController.swift */; };
-		5333E21B24AC2739006D07F7 /* NodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E20824AC2736006D07F7 /* NodesViewController.swift */; };
-		5333E21C24AC2739006D07F7 /* TwoFAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E20924AC2736006D07F7 /* TwoFAViewController.swift */; };
+		5333E21B24AC2739006D07F7 /* BranchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E20824AC2736006D07F7 /* BranchViewController.swift */; };
+		5333E21C24AC2739006D07F7 /* ValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E20924AC2736006D07F7 /* ValidationViewController.swift */; };
 		5333E21E24AC2739006D07F7 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E20B24AC2736006D07F7 /* MemberViewController.swift */; };
 		5333E21F24AC2739006D07F7 /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E20D24AC2737006D07F7 /* WritingViewController.swift */; };
 		5333E22024AC2739006D07F7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E20E24AC2737006D07F7 /* BaseViewController.swift */; };
 		5333E22124AC2739006D07F7 /* MyCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E20F24AC2737006D07F7 /* MyCenterViewController.swift */; };
-		5333E22224AC2739006D07F7 /* NodeTopicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21024AC2737006D07F7 /* NodeTopicListViewController.swift */; };
+		5333E22224AC2739006D07F7 /* BranchTopicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21024AC2737006D07F7 /* BranchTopicListViewController.swift */; };
 		5333E22324AC2739006D07F7 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21124AC2737006D07F7 /* UserViewController.swift */; };
 		5333E22424AC2739006D07F7 /* AccountsManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21224AC2738006D07F7 /* AccountsManagerViewController.swift */; };
-		5333E22524AC2739006D07F7 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21324AC2738006D07F7 /* NotificationsViewController.swift */; };
+		5333E22524AC2739006D07F7 /* MessageRemindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21324AC2738006D07F7 /* MessageRemindViewController.swift */; };
 		5333E22624AC2739006D07F7 /* RelevantCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21424AC2738006D07F7 /* RelevantCommentsViewController.swift */; };
 		5333E22824AC2739006D07F7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21624AC2738006D07F7 /* MenuViewController.swift */; };
 		5333E22C24AC2776006D07F7 /* TopicApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E22A24AC2776006D07F7 /* TopicApi.swift */; };
@@ -194,19 +194,19 @@
 		5333E1E024AC26B1006D07F7 /* TopicDetailHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailHeaderCell.swift; sourceTree = "<group>"; };
 		5333E1E124AC26B1006D07F7 /* V2LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2LoadingView.swift; sourceTree = "<group>"; };
 		5333E1E224AC26B1006D07F7 /* NodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeTableViewCell.swift; sourceTree = "<group>"; };
-		5333E20524AC2735006D07F7 /* TopicDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailViewController.swift; sourceTree = "<group>"; };
-		5333E20624AC2735006D07F7 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		5333E20524AC2735006D07F7 /* PostDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		5333E20624AC2735006D07F7 /* MyCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewController.swift; sourceTree = "<group>"; };
 		5333E20724AC2736006D07F7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		5333E20824AC2736006D07F7 /* NodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodesViewController.swift; sourceTree = "<group>"; };
-		5333E20924AC2736006D07F7 /* TwoFAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoFAViewController.swift; sourceTree = "<group>"; };
+		5333E20824AC2736006D07F7 /* BranchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchViewController.swift; sourceTree = "<group>"; };
+		5333E20924AC2736006D07F7 /* ValidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationViewController.swift; sourceTree = "<group>"; };
 		5333E20B24AC2736006D07F7 /* MemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
 		5333E20D24AC2737006D07F7 /* WritingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
 		5333E20E24AC2737006D07F7 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5333E20F24AC2737006D07F7 /* MyCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterViewController.swift; sourceTree = "<group>"; };
-		5333E21024AC2737006D07F7 /* NodeTopicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeTopicListViewController.swift; sourceTree = "<group>"; };
+		5333E21024AC2737006D07F7 /* BranchTopicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchTopicListViewController.swift; sourceTree = "<group>"; };
 		5333E21124AC2737006D07F7 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		5333E21224AC2738006D07F7 /* AccountsManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsManagerViewController.swift; sourceTree = "<group>"; };
-		5333E21324AC2738006D07F7 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		5333E21324AC2738006D07F7 /* MessageRemindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRemindViewController.swift; sourceTree = "<group>"; };
 		5333E21424AC2738006D07F7 /* RelevantCommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelevantCommentsViewController.swift; sourceTree = "<group>"; };
 		5333E21624AC2738006D07F7 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		5333E22A24AC2776006D07F7 /* TopicApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicApi.swift; sourceTree = "<group>"; };
@@ -290,16 +290,16 @@
 				5333E18024AC205B006D07F7 /* MainViewController.swift */,
 				5333E21624AC2738006D07F7 /* MenuViewController.swift */,
 				5333E21224AC2738006D07F7 /* AccountsManagerViewController.swift */,
-				5333E20624AC2735006D07F7 /* FavoritesViewController.swift */,
+				5333E20624AC2735006D07F7 /* MyCollectionViewController.swift */,
 				5333E20724AC2736006D07F7 /* LoginViewController.swift */,
 				5333E20B24AC2736006D07F7 /* MemberViewController.swift */,
 				5333E20F24AC2737006D07F7 /* MyCenterViewController.swift */,
-				5333E20824AC2736006D07F7 /* NodesViewController.swift */,
-				5333E21024AC2737006D07F7 /* NodeTopicListViewController.swift */,
-				5333E21324AC2738006D07F7 /* NotificationsViewController.swift */,
+				5333E20824AC2736006D07F7 /* BranchViewController.swift */,
+				5333E21024AC2737006D07F7 /* BranchTopicListViewController.swift */,
+				5333E21324AC2738006D07F7 /* MessageRemindViewController.swift */,
 				5333E21424AC2738006D07F7 /* RelevantCommentsViewController.swift */,
-				5333E20524AC2735006D07F7 /* TopicDetailViewController.swift */,
-				5333E20924AC2736006D07F7 /* TwoFAViewController.swift */,
+				5333E20524AC2735006D07F7 /* PostDetailViewController.swift */,
+				5333E20924AC2736006D07F7 /* ValidationViewController.swift */,
 				5333E21124AC2737006D07F7 /* UserViewController.swift */,
 				5333E20D24AC2737006D07F7 /* WritingViewController.swift */,
 				5333E1BE24AC25BD006D07F7 /* XZWebViewViewController.swift */,
@@ -569,7 +569,7 @@
 				5333E1F724AC26B1006D07F7 /* V2Photo.swift in Sources */,
 				5333E1B124AC232C006D07F7 /* String+Avatar.swift in Sources */,
 				5333E23624AC2795006D07F7 /* NodeModel.swift in Sources */,
-				5333E21C24AC2739006D07F7 /* TwoFAViewController.swift in Sources */,
+				5333E21C24AC2739006D07F7 /* ValidationViewController.swift in Sources */,
 				5333E17524AC1C71006D07F7 /* LDNavigationController.m in Sources */,
 				5333E1FF24AC26B1006D07F7 /* LeftUserHeadCell.swift in Sources */,
 				5333E23524AC2795006D07F7 /* TopicCommentModel.swift in Sources */,
@@ -589,7 +589,7 @@
 				5333E1B924AC2333006D07F7 /* UITableView+FINAutomaticHeightCell.swift in Sources */,
 				5333E1F324AC26B1006D07F7 /* AccountListTableViewCell.swift in Sources */,
 				5333E1A424AC2302006D07F7 /* V2ex+Define.swift in Sources */,
-				5333E21824AC2739006D07F7 /* TopicDetailViewController.swift in Sources */,
+				5333E21824AC2739006D07F7 /* PostDetailViewController.swift in Sources */,
 				5333E17724AC1C71006D07F7 /* LDTabBarController.m in Sources */,
 				5333E19B24AC2302006D07F7 /* UIView+Extension.swift in Sources */,
 				5333E22824AC2739006D07F7 /* MenuViewController.swift in Sources */,
@@ -609,7 +609,7 @@
 				5333E1F024AC26B1006D07F7 /* UIButton+Extension.swift in Sources */,
 				5333E18924AC2227006D07F7 /* UserModel.swift in Sources */,
 				5333E1F124AC26B1006D07F7 /* V2RefreshFooter.swift in Sources */,
-				5333E22224AC2739006D07F7 /* NodeTopicListViewController.swift in Sources */,
+				5333E22224AC2739006D07F7 /* BranchTopicListViewController.swift in Sources */,
 				5333E19D24AC2302006D07F7 /* V2Client.swift in Sources */,
 				5333E1F824AC26B1006D07F7 /* V2PhotoBrowserSwipeInteractiveTransition.swift in Sources */,
 				5333E17424AC1C71006D07F7 /* LDTabBar.m in Sources */,
@@ -630,7 +630,7 @@
 				5333E1EF24AC26B1006D07F7 /* BaseDetailTableViewCell.swift in Sources */,
 				5333E1F224AC26B1006D07F7 /* HomeTopicListTableViewCell.swift in Sources */,
 				5333E1EE24AC26B1006D07F7 /* TopicDetailWebViewContentCell.swift in Sources */,
-				5333E22524AC2739006D07F7 /* NotificationsViewController.swift in Sources */,
+				5333E22524AC2739006D07F7 /* MessageRemindViewController.swift in Sources */,
 				5333E19E24AC2302006D07F7 /* V2LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				5333E19A24AC2302006D07F7 /* V2EXMentionedBindingParser.swift in Sources */,
 				5333E1FB24AC26B1006D07F7 /* NotificationMenuButton.swift in Sources */,
@@ -646,10 +646,10 @@
 				5333E1B724AC232C006D07F7 /* Request+Extension.swift in Sources */,
 				5333E23824AC2795006D07F7 /* UserApi.swift in Sources */,
 				5333E1B624AC232C006D07F7 /* SVProgressHUD+Extension.swift in Sources */,
-				5333E21B24AC2739006D07F7 /* NodesViewController.swift in Sources */,
+				5333E21B24AC2739006D07F7 /* BranchViewController.swift in Sources */,
 				5333E14F24AB406A006D07F7 /* AppDelegate.swift in Sources */,
 				5333E1E724AC26B1006D07F7 /* NodeCollectionReusableView.swift in Sources */,
-				5333E21924AC2739006D07F7 /* FavoritesViewController.swift in Sources */,
+				5333E21924AC2739006D07F7 /* MyCollectionViewController.swift in Sources */,
 				5333E1A524AC2302006D07F7 /* V2Style.swift in Sources */,
 				5333E1E324AC26B1006D07F7 /* LeftNodeTableViewCell.swift in Sources */,
 				5333E1ED24AC26B1006D07F7 /* V2SpacingLabel.swift in Sources */,

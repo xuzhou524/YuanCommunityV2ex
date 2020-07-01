@@ -1,5 +1,5 @@
 //
-//  FavoritesViewController.swift
+//  MyCollectionViewController.swift
 //  YuanCommunityV2ex
 //
 //  Created by xuzhou on 2020/06/06.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoritesViewController: BaseViewController,UITableViewDataSource,UITableViewDelegate {
+class MyCollectionViewController: BaseViewController,UITableViewDataSource,UITableViewDelegate {
     var topicList:[TopicListModel]?
     var currentPage = 1
     //最大的Page
@@ -131,7 +131,7 @@ class FavoritesViewController: BaseViewController,UITableViewDataSource,UITableV
         let item = self.topicList![indexPath.row]
         
         if let id = item.topicId {
-            let topicDetailController = TopicDetailViewController();
+            let topicDetailController = PostDetailViewController();
             topicDetailController.topicId = id ;
             self.navigationController?.pushViewController(topicDetailController, animated: true)
             tableView .deselectRow(at: indexPath, animated: true);

@@ -38,12 +38,9 @@ class XZWebViewViewController: UIViewController ,V2ActivityViewDataSource{
             self.view.backgroundColor = XZSwiftColor.backgroudColor
             
             let backbtn = UIButton(type: .custom)
-    //        backbtn.setTitle("返回", for: .normal)
             backbtn.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
             backbtn.imageView!.contentMode = .center;
             backbtn.setImage(UIImage.imageUsedTemplateMode("ic_return_left"), for: .normal)
-    //        backbtn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -21, bottom: 0, right: 0)
-    //        backbtn.titleEdgeInsets = UIEdgeInsets(top: 0, left: -31, bottom: 0, right: 0)
             backbtn.titleLabel?.font = v2Font(14)
             backbtn.setTitleColor(self.navigationController?.navigationBar.tintColor, for: .normal)
             backbtn.contentHorizontalAlignment = .left
@@ -133,12 +130,12 @@ class XZWebViewViewController: UIViewController ,V2ActivityViewDataSource{
             activityView.dismiss()
             if  let url = self.webView?.url {
                 if url.absoluteString.Lenght > 0 {
-                    UIApplication.shared.openURL(url)
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
                     return;
                 }
             }
             if let url = URL(string: self.url) {
-                UIApplication.shared.openURL(url)
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
             
         }

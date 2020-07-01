@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import FXBlurView
 import Shimmer
 import FDFullscreenPopGesture
 
@@ -50,8 +49,6 @@ class RelevantCommentsViewControllerTransionPresent:NSObject,UIViewControllerAni
     }
 }
 
-
-
 class RelevantCommentsViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     var commentsArray:[TopicCommentModel] = []
@@ -69,9 +66,7 @@ class RelevantCommentsViewController: UIViewController, UITableViewDelegate,UITa
         tableView.dataSource = self
         return tableView
     }()
-    
-//    var frostedView = UIView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     

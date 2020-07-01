@@ -19,13 +19,7 @@ class MyCenterViewController: MemberViewController {
         self.settingsButton!.setImage(UIImage(named: "ic_supervisor_account"), for: .normal)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: self.settingsButton!)
         self.settingsButton!.addTarget(self, action: #selector(MyCenterViewController.accountManagerClick), for: .touchUpInside)
-//        self.settingsButton!.isHidden = true
     }
-    
-//    override func getDataSuccessfully(_ aModel: MemberModel) {
-//        super.getDataSuccessfully(aModel)
-//        self.settingsButton!.isHidden = false
-//    }
     
     @objc func accountManagerClick(){
         self.navigationController?.pushViewController(AccountsManagerViewController(), animated: true)

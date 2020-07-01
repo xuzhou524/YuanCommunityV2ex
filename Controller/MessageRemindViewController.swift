@@ -1,5 +1,5 @@
 //
-//  NotificationsViewController.swift
+//  MessageRemindViewController.swift
 //  YuanCommunityV2ex
 //
 //  Created by xuzhou on 2020/06/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 import MJRefresh
-class NotificationsViewController: BaseViewController,UITableViewDataSource,UITableViewDelegate {
+class MessageRemindViewController: BaseViewController,UITableViewDataSource,UITableViewDelegate {
 
     fileprivate var notificationsArray:[NotificationsModel] = []
     
@@ -80,7 +80,7 @@ class NotificationsViewController: BaseViewController,UITableViewDataSource,UITa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = self.notificationsArray[indexPath.row]
         if let id = item.topicId {
-            let topicDetailController = TopicDetailViewController();
+            let topicDetailController = PostDetailViewController();
             topicDetailController.topicId = id ;
             self.navigationController?.pushViewController(topicDetailController, animated: true)
             tableView .deselectRow(at: indexPath, animated: true);

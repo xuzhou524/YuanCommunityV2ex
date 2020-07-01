@@ -159,7 +159,7 @@ struct TopicActionModel: AnalyzeURLActionProtocol {
         }
     }
     func run() {
-        let controller = TopicDetailViewController()
+        let controller = PostDetailViewController()
         controller.topicId = topicID
         V2Client.sharedInstance.topNavigationController.pushViewController(controller, animated: true)
     }
@@ -189,7 +189,7 @@ struct NodeActionModel: AnalyzeURLActionProtocol {
         node.nodeId = self.nodeID
         node.nodeName = self.nodeID
         
-        let controller = NodeTopicListViewController()
+        let controller = BranchTopicListViewController()
         controller.node = node
         V2Client.sharedInstance.topNavigationController.pushViewController(controller, animated: true)
     }

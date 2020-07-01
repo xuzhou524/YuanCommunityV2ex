@@ -1,5 +1,5 @@
 //
-//  TwoFAViewController.swift
+//  ValidationViewController.swift
 //  YuanCommunityV2ex
 //
 //  Created by xuzhou on 2020/06/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TwoFAViewController: UIViewController ,UITextFieldDelegate{
+class ValidationViewController: UIViewController ,UITextFieldDelegate{
 
     let backgroundImageView = UIImageView()
     let frostedView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
@@ -96,15 +96,13 @@ class TwoFAViewController: UIViewController ,UITextFieldDelegate{
     }
 }
 
-extension TwoFAViewController {
+extension ValidationViewController {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.next()
         return true
     }
-}
-
-//MARK: - 初始化界面
-extension TwoFAViewController {
+    
     func setupView(){
         self.view.backgroundColor = UIColor.black
         
@@ -178,26 +176,12 @@ extension TwoFAViewController {
             make.top.equalTo(self.codeTextField.snp.bottom).offset(10)
             make.left.equalTo(self.codeTextField)
         }
-
-        
-        
-        let footLabel = UILabel()
-        footLabel.alpha = 0.5
-        footLabel.font = v2Font(12)
-        footLabel.text = "© 2020 Fin"
-        
-        vibrancyView.contentView.addSubview(footLabel);
-        
-        footLabel.snp.makeConstraints{ (make) -> Void in
-            make.bottom.equalTo(vibrancyView).offset(-20)
-            make.centerX.equalTo(vibrancyView)
-        }
         
         self.cancelButton.contentMode = .center
         cancelButton .setImage(UIImage(named: "ic_cancel")!.withRenderingMode(.alwaysTemplate), for: .normal)
         vibrancyView.contentView.addSubview(cancelButton)
         cancelButton.snp.makeConstraints{ (make) -> Void in
-            make.centerY.equalTo(footLabel)
+            make.bottom.equalTo(vibrancyView).offset(-25)
             make.right.equalTo(vibrancyView).offset(-5)
             make.width.height.equalTo(40)
         }

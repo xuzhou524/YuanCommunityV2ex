@@ -96,7 +96,7 @@ class MainViewController: UIViewController {
                 if let err = error as? ApiError {
                     switch err {
                     case .needs2FA:
-                        self.navigationController?.present(TwoFAViewController(), animated: true, completion: nil);
+                        self.navigationController?.present(ValidationViewController(), animated: true, completion: nil);
                     default:
                         SVProgressHUD.showError(withStatus: err.rawString())
                     }
@@ -173,7 +173,7 @@ extension MainViewController:UITableViewDataSource,UITableViewDelegate {
         let item = self.topicList![indexPath.row]
         
         if let id = item.topicId {
-            let topicDetailController = TopicDetailViewController();
+            let topicDetailController = PostDetailViewController();
             topicDetailController.topicId = id ;
             topicDetailController.ignoreTopicHandler = {[weak self] (topicId) in
                 self?.perform(#selector(MainViewController.ignoreTopicHandler(_:)), with: topicId, afterDelay: 0.6)
