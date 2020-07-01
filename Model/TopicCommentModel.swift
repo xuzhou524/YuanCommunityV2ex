@@ -255,15 +255,12 @@ extension TopicCommentModel {
         
         var users = getUsersOfComment(firstComment)
 
-        //当前会话所有相关的用户（ B 回复 A， C 回复 B， D 回复 C， 查看D的对话时， D C B 为相关联用户）
         var relateUsers:Set<String> = users
         for comment in allCommentsArray {
-            //被回复人所@的人也加进对话，但是不递归获取所有关系链（可能获取到无意义的数据）
             if let username = comment.userName, users.contains(username) {
                 let commentUsers = getUsersOfComment(comment)
                 relateUsers = relateUsers.union(commentUsers)
             }
-            //只找到点击的位置，之后就不找了
             if comment == firstComment {
                 break;
             }
@@ -272,7 +269,6 @@ extension TopicCommentModel {
         users.insert(firstComment.userName!)
         
         for comment in allCommentsArray {
-            //判断评论中是否@的所有用户和会话相关联的用户无关，是的话则证明这条评论是和别人讲的，不属于当前对话
             let commentUsers = getUsersOfComment(comment)
             let intersectUsers = commentUsers.intersection(relateUsers)
             if commentUsers.count > 0 && intersectUsers.count <= 0 {
@@ -284,7 +280,6 @@ extension TopicCommentModel {
                     relevantComments.append(comment)
                 }
             }
-            //只找到点击的位置，之后就不找了
             if comment == firstComment {
                 break;
             }
@@ -295,16 +290,12 @@ extension TopicCommentModel {
     
     //获取评论中 @ 了多少用户
     class func getUsersOfComment(_ comment:TopicCommentModel) -> Set<String>  {
-        
-        //获取到所有YYTextHighlight ，用以之后获取 这条评论@了多少用户
         var textHighlights:[YYTextHighlight] = []
         comment.textAttributedString!.enumerateAttribute(NSAttributedString.Key(rawValue: YYTextHighlightAttributeName), in: NSMakeRange(0, comment.textAttributedString!.length), options: []) { (attribute, range, stop) -> Void in
             if let highlight = attribute as? YYTextHighlight {
                 textHighlights.append(highlight)
             }
         }
-        
-        //获取这条评论 @ 了多少用户
         var users:Set<String> = []
         for highlight in textHighlights {
             if let url = highlight.userInfo?["url"] as? String{

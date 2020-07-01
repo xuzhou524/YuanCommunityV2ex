@@ -14,15 +14,12 @@ let kUserName = "me.Aaron_xu.username"
 
 class YuanCommunUser: NSObject {
     static let sharedInstance = YuanCommunUser()
-    /// 用户信息
     fileprivate var _user:UserModel?
     var user:UserModel? {
         get {
             return self._user
         }
         set {
-            //保证给user赋值是在主线程进行的
-            //原因是 有很多UI可能会监听这个属性，这个属性发生更改时，那些UI也会相应的修改自己，所以要在主线程操作
             dispatch_sync_safely_main_queue {
                 self._user = newValue
                 self.username = newValue?.username
@@ -33,11 +30,8 @@ class YuanCommunUser: NSObject {
     @objc dynamic var username:String?
 
     fileprivate var _once:String?
-    //全局once字符串，用于用户各种操作，例如回帖 登录 。这些操作都需要用的once ，而且这个once是全局统一的
     var once:String?  {
         get {
-            //取了之后就删掉,
-            //因为once 只能使用一次，之后就不可再用了，
             let onceStr = _once
             _once = nil
             return onceStr;
@@ -46,14 +40,11 @@ class YuanCommunUser: NSObject {
             _once = newValue
         }
     }
-    /// 返回 客户端显示是否有可用的once
     var hasOnce:Bool {
         get {
             return _once != nil && _once!.Lenght > 0
         }
     }
-
-    /// 通知数量
     @objc dynamic var notificationCount:Int = 0
 
 
@@ -62,7 +53,6 @@ class YuanCommunUser: NSObject {
         super.init()
         dispatch_sync_safely_main_queue {
             self.setup()
-            //如果客户端是登录状态，则去验证一下登录有没有过期
             if self.isLogin {
                 self.verifyLoginStatus()
             }
@@ -101,7 +91,6 @@ class YuanCommunUser: NSObject {
         self.username = nil
         self.once = nil
         self.notificationCount = 0
-        //清空settings中的username
         V2EXSettings.sharedInstance[kUserName] = self.username
     }
 
@@ -152,9 +141,6 @@ class YuanCommunUser: NSObject {
      - parameter rootNode: 有Notifications 的节点
      */
     func getNotificationsCount(_ rootNode: JiNode) {
-        //这里本想放在 JIHTMLResponseSerializer 自动获取。
-        //但我现在还不确定，是否每个每个页面的title都会带上 未读通知数量
-        //所以先交由 我确定会带的页面 手动获取
         let notification = rootNode.xPath("//head/title").first?.content
         if let notification = notification {
 

@@ -315,8 +315,6 @@ extension TopicDetailViewController: UITableViewDelegate,UITableViewDataSource {
                 if self.webViewContentCell!.contentHeightChanged == nil {
                     self.webViewContentCell!.contentHeightChanged = { [weak self] (height:CGFloat) -> Void  in
                         if let weakSelf = self {
-                            //在cell显示在屏幕时更新，否则会崩溃会崩溃会崩溃
-                            //另外刷新清空旧cell,重新创建这个cell ,所以 contentHeightChanged 需要判断cell是否为nil
                             if let cell = weakSelf.webViewContentCell, weakSelf.tableView.visibleCells.contains(cell) {
                                 if let height = weakSelf.webViewContentCell?.contentHeight, height > 1.5 * SCREEN_HEIGHT{ //太长了就别动画了。。
                                     UIView.animate(withDuration: 0, animations: { () -> Void in
@@ -371,26 +369,6 @@ extension TopicDetailViewController: UIActionSheetDelegate {
     func selectedRowWithActionSheet(_ indexPath:IndexPath){
         self.tableView.deselectRow(at: indexPath, animated: true);
 
-        //这段代码也可以执行，但是当点击时，会有个0.3秒的dismiss动画。
-        //然后再弹出回复页面或者查看对话页面。感觉太长了，暂时不用
-//        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
-//        let replyAction = UIAlertAction(title: "回复", style: .Default) { _ in
-//            self.replyComment(indexPath.row)
-//        }
-//        let thankAction = UIAlertAction(title: "感谢", style: .Default) { _ in
-//            self.thankComment(indexPath.row)
-//        }
-//        let relevantCommentsAction = UIAlertAction(title: "查看对话", style: .Default) { _ in
-//            self.relevantComment(indexPath.row)
-//        }
-//        let cancelAction = UIAlertAction(title: "取消", style: .Cancel, handler: nil)
-//        //将action全加进actionSheet
-//        [replyAction,thankAction,relevantCommentsAction,cancelAction].forEach { (action) -> () in
-//            actionSheet.addAction(action)
-//        }
-//        self.navigationController?.presentViewController(actionSheet, animated: true, completion: nil)
-        
-        //这段代码在iOS8.3中弃用，但是现在还可以使用，先用着吧
         let actionSheet = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: nil, otherButtonTitles: "回复", "感谢" ,"查看对话")
         actionSheet.tag = indexPath.row
         actionSheet.show(in: self.view)

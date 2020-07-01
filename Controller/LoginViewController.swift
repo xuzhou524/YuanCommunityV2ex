@@ -194,10 +194,6 @@ class LoginViewController: UIViewController {
             (response) -> Void in
             
             if let jiHtml = response .result.value{
-                //获取帖子内容
-                //取出 once 登录时要用
-                
-                //self.onceStr = jiHtml.xPath("//*[@name='once'][1]")?.first?["value"]
                 self.usernameStr = jiHtml.xPath("//*[@id='Wrapper']/div/div[1]/div[2]/form/table/tr[1]/td[2]/input[@class='sl']")?.first?["name"]
                 self.passwordStr = jiHtml.xPath("//*[@id='Wrapper']/div/div[1]/div[2]/form/table/tr[2]/td[2]/input[@class='sl']")?.first?["name"]
                 self.codeStr = jiHtml.xPath("//*[@id='Wrapper']/div/div[1]/div[2]/form/table/tr[4]/td[2]/input[@class='sl']")?.first?["name"]
