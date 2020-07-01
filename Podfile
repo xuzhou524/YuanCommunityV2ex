@@ -21,8 +21,7 @@ def pods
   pod 'Moya/RxSwift'
   pod 'SwiftyJSON', '~> 4.3'
   pod 'DeviceKit'
-  
-  pod 'Google-Mobile-Ads-SDK'
+
 end
 
 target 'YuanCommunityV2ex' do
