@@ -249,7 +249,6 @@
 		5333E14224AB406A006D07F7 = {
 			isa = PBXGroup;
 			children = (
-				5333E16A24AC1C4B006D07F7 /* Resources */,
 				5333E16924AC1C3F006D07F7 /* Util */,
 				5333E16824AC1C35006D07F7 /* Model */,
 				5333E16724AC1C2A006D07F7 /* View */,
@@ -400,13 +399,6 @@
 				5333E1BB24AC24DA006D07F7 /* V2EXTargetType.swift */,
 			);
 			path = Util;
-			sourceTree = "<group>";
-		};
-		5333E16A24AC1C4B006D07F7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		5333E1D124AC26AF006D07F7 /* V2PhotoBrowser */ = {
