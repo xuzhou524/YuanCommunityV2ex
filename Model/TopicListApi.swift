@@ -15,6 +15,8 @@ enum TopicListApi {
     case favoriteList(page: Int)
     //获取节点主题列表
     case nodeTopicList(nodeName: String, page:Int)
+    
+    case getUserInfo(username:String)
 }
 
 extension TopicListApi: V2EXTargetType {
@@ -30,7 +32,10 @@ extension TopicListApi: V2EXTargetType {
             return ["p": page]
         case let .nodeTopicList(_, page):
             return ["p": page]
+        case let .getUserInfo(username):
+            return ["username": username]
         }
+        
     }
     
     var path: String {
@@ -44,6 +49,9 @@ extension TopicListApi: V2EXTargetType {
             return "/my/topics"
         case let .nodeTopicList(nodeName, _):
             return "/go/\(nodeName)"
+        case .getUserInfo:
+            return "/api/members/show.json"
+            
         }
     }
     

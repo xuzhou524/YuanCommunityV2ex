@@ -132,7 +132,7 @@ extension UserModel{
     
     class func getUserInfoByUsername(_ username:String ,completionHandler:((V2ValueResponse<UserModel>) -> Void)? ){
         
-        _ = UserApi.provider.requestAPI(.getUserInfo(username: username))
+        _ = TopicListApi.provider.requestAPI(.getUserInfo(username: username))
             .mapResponseToObj(UserModel.self)
             .subscribe(onNext: { (userModel) in
                 YuanCommunUser.sharedInstance.user = userModel
