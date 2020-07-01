@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let tabBarController = LDTabBarController()
         
-         let vc1 = MainViewController()
+        let vc1 = MainViewController()
         let nav1 = LDNavigationController(rootViewController: vc1)
         
         nav1.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "tabar_home"), selectedImage: UIImage(named: "tabar_home_sel")?.withRenderingMode(.alwaysOriginal))

@@ -17,6 +17,7 @@ import AlamofireObjectMapper
 class MainViewController: UIViewController {
 
     var tab:String? = "all"
+    var titleTab:String? = "首页"
     var currentPage = 0
     var topicList:Array<TopicListModel>?
     
@@ -35,8 +36,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "首页"
-        if (tab != nil) && (tab != "all"){
-            self.title = tab
+        if (titleTab != nil){
+            self.title = titleTab
         }
  
         //监听程序即将进入前台运行、进入后台休眠 事件

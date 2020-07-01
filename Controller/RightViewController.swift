@@ -64,10 +64,10 @@ class RightViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let node = self.rightNodes[indexPath.row];
-        let homeVC = MainViewController()
-        homeVC.tab = node.nodeTab
-
-        self.navigationController?.pushViewController(homeVC, animated: true)
+        let mainVC = MainViewController()
+        mainVC.tab = node.nodeTab
+        mainVC.titleTab = node.nodeName
+        self.navigationController?.pushViewController(mainVC, animated: true)
     }
 }
 
