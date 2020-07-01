@@ -1,5 +1,5 @@
 //
-//  V2EXSettings.swift
+//  XZSettings.swift
 //  YuanCommunityV2ex
 //
 //  Created by xuzhou on 20/05/18.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-let keyPrefix =  "me.Aaron_xu.V2EXSettings."
+let keyPrefix =  "me.Aaron_xu.XZSettings."
 
-class V2EXSettings: NSObject {
-    static let sharedInstance = V2EXSettings()
+class XZSettings: NSObject {
+    static let sharedInstance = XZSettings()
     fileprivate override init(){
         super.init()
     }
@@ -26,4 +26,4 @@ class V2EXSettings: NSObject {
     }
 }
 
-let Settings = V2EXSettings.sharedInstance
+let Settings = XZSettings.sharedInstance

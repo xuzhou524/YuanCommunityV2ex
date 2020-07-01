@@ -81,7 +81,7 @@ class ReplyingViewController:WritingViewController {
             return;
         }
 
-        V2ProgressHUD.showWithClearMask()
+        SVProgressHUD.show(with: .clear)
         TopicCommentModel.replyWithTopicId(self.topicModel!, content: self.textView!.text ) {
             (response) in
             if response.success {

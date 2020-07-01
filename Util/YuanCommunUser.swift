@@ -59,7 +59,7 @@ class YuanCommunUser: NSObject {
         }
     }
     func setup(){
-        self.username = V2EXSettings.sharedInstance[kUserName]
+        self.username = XZSettings.sharedInstance[kUserName]
     }
 
 
@@ -91,7 +91,7 @@ class YuanCommunUser: NSObject {
         self.username = nil
         self.once = nil
         self.notificationCount = 0
-        V2EXSettings.sharedInstance[kUserName] = self.username
+        XZSettings.sharedInstance[kUserName] = self.username
     }
 
     /**

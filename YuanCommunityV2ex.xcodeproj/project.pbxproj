@@ -30,7 +30,7 @@
 		5333E19D24AC2302006D07F7 /* V2Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E18F24AC2300006D07F7 /* V2Client.swift */; };
 		5333E19E24AC2302006D07F7 /* V2LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19024AC2300006D07F7 /* V2LeftAlignedCollectionViewFlowLayout.swift */; };
 		5333E1A124AC2302006D07F7 /* V2UsersKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19324AC2301006D07F7 /* V2UsersKeychain.swift */; };
-		5333E1A224AC2302006D07F7 /* V2EXSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19424AC2301006D07F7 /* V2EXSettings.swift */; };
+		5333E1A224AC2302006D07F7 /* XZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19424AC2301006D07F7 /* XZSettings.swift */; };
 		5333E1A324AC2302006D07F7 /* V2ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19524AC2301006D07F7 /* V2ProgressHUD.swift */; };
 		5333E1A424AC2302006D07F7 /* V2ex+Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19624AC2301006D07F7 /* V2ex+Define.swift */; };
 		5333E1A524AC2302006D07F7 /* V2Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E19724AC2301006D07F7 /* V2Style.swift */; };
@@ -140,7 +140,7 @@
 		5333E18F24AC2300006D07F7 /* V2Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2Client.swift; sourceTree = "<group>"; };
 		5333E19024AC2300006D07F7 /* V2LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		5333E19324AC2301006D07F7 /* V2UsersKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2UsersKeychain.swift; sourceTree = "<group>"; };
-		5333E19424AC2301006D07F7 /* V2EXSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXSettings.swift; sourceTree = "<group>"; };
+		5333E19424AC2301006D07F7 /* XZSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZSettings.swift; sourceTree = "<group>"; };
 		5333E19524AC2301006D07F7 /* V2ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2ProgressHUD.swift; sourceTree = "<group>"; };
 		5333E19624AC2301006D07F7 /* V2ex+Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "V2ex+Define.swift"; sourceTree = "<group>"; };
 		5333E19724AC2301006D07F7 /* V2Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2Style.swift; sourceTree = "<group>"; };
@@ -368,7 +368,7 @@
 				5333E18F24AC2300006D07F7 /* V2Client.swift */,
 				5333E19624AC2301006D07F7 /* V2ex+Define.swift */,
 				5333E18C24AC2300006D07F7 /* V2EXMentionedBindingParser.swift */,
-				5333E19424AC2301006D07F7 /* V2EXSettings.swift */,
+				5333E19424AC2301006D07F7 /* XZSettings.swift */,
 				5333E19824AC2302006D07F7 /* V2HitTestSlopButton.swift */,
 				5333E19024AC2300006D07F7 /* V2LeftAlignedCollectionViewFlowLayout.swift */,
 				5333E19524AC2301006D07F7 /* V2ProgressHUD.swift */,
@@ -567,7 +567,7 @@
 				5333E23724AC2795006D07F7 /* MemberModel.swift in Sources */,
 				5333E1A624AC2302006D07F7 /* V2HitTestSlopButton.swift in Sources */,
 				5333E22424AC2739006D07F7 /* AccountsManagerViewController.swift in Sources */,
-				5333E1A224AC2302006D07F7 /* V2EXSettings.swift in Sources */,
+				5333E1A224AC2302006D07F7 /* XZSettings.swift in Sources */,
 				5333E1FC24AC26B1006D07F7 /* TopicDetailCommentCell.swift in Sources */,
 				5333E1B924AC2333006D07F7 /* UITableView+FINAutomaticHeightCell.swift in Sources */,
 				5333E1F324AC26B1006D07F7 /* AccountListTableViewCell.swift in Sources */,
