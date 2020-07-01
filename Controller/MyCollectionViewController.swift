@@ -54,7 +54,7 @@ class MyCollectionViewController: BaseViewController,UITableViewDataSource,UITab
         //根据 tab name 获取帖子列表
         self.currentPage = 1
         
-        _ = TopicListApi.provider
+        _ = YuanCommunityApi.provider
             .requestAPI(.favoriteList(page: self.currentPage))
             .getJiDataFirst(hander: { (ji) in
                 var maxPage = 1
@@ -93,7 +93,7 @@ class MyCollectionViewController: BaseViewController,UITableViewDataSource,UITab
         }
         self.currentPage += 1
         
-        _ = TopicListApi.provider
+        _ = YuanCommunityApi.provider
             .requestAPI(.favoriteList(page: self.currentPage))
             .mapResponseToJiArray(FavoriteListModel.self)
             .subscribe(onNext: { (response) in

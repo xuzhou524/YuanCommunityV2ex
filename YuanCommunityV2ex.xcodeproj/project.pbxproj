@@ -95,8 +95,7 @@
 		5333E22524AC2739006D07F7 /* MessageRemindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21324AC2738006D07F7 /* MessageRemindViewController.swift */; };
 		5333E22624AC2739006D07F7 /* RelevantCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21424AC2738006D07F7 /* RelevantCommentsViewController.swift */; };
 		5333E22824AC2739006D07F7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21624AC2738006D07F7 /* MenuViewController.swift */; };
-		5333E22C24AC2776006D07F7 /* TopicApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E22A24AC2776006D07F7 /* TopicApi.swift */; };
-		5333E22D24AC2776006D07F7 /* TopicListApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E22B24AC2776006D07F7 /* TopicListApi.swift */; };
+		5333E22D24AC2776006D07F7 /* YuanCommunityApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E22B24AC2776006D07F7 /* YuanCommunityApi.swift */; };
 		5333E23524AC2795006D07F7 /* TopicCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E22E24AC2794006D07F7 /* TopicCommentModel.swift */; };
 		5333E23624AC2795006D07F7 /* NodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E22F24AC2794006D07F7 /* NodeModel.swift */; };
 		5333E23724AC2795006D07F7 /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E23024AC2795006D07F7 /* MemberModel.swift */; };
@@ -206,8 +205,7 @@
 		5333E21324AC2738006D07F7 /* MessageRemindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRemindViewController.swift; sourceTree = "<group>"; };
 		5333E21424AC2738006D07F7 /* RelevantCommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelevantCommentsViewController.swift; sourceTree = "<group>"; };
 		5333E21624AC2738006D07F7 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		5333E22A24AC2776006D07F7 /* TopicApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicApi.swift; sourceTree = "<group>"; };
-		5333E22B24AC2776006D07F7 /* TopicListApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicListApi.swift; sourceTree = "<group>"; };
+		5333E22B24AC2776006D07F7 /* YuanCommunityApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YuanCommunityApi.swift; sourceTree = "<group>"; };
 		5333E22E24AC2794006D07F7 /* TopicCommentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCommentModel.swift; sourceTree = "<group>"; };
 		5333E22F24AC2794006D07F7 /* NodeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeModel.swift; sourceTree = "<group>"; };
 		5333E23024AC2795006D07F7 /* MemberModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberModel.swift; sourceTree = "<group>"; };
@@ -338,8 +336,7 @@
 		5333E16824AC1C35006D07F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5333E22A24AC2776006D07F7 /* TopicApi.swift */,
-				5333E22B24AC2776006D07F7 /* TopicListApi.swift */,
+				5333E22B24AC2776006D07F7 /* YuanCommunityApi.swift */,
 				5333E18224AC20D1006D07F7 /* TopicListModel.swift */,
 				5333E18424AC2142006D07F7 /* BaseModel.swift */,
 				5333E23024AC2795006D07F7 /* MemberModel.swift */,
@@ -587,7 +584,6 @@
 				5333E1BC24AC24DA006D07F7 /* Observable+Extension.swift in Sources */,
 				5333E17624AC1C71006D07F7 /* LDColor.m in Sources */,
 				5333E1EB24AC26B1006D07F7 /* NotificationTableViewCell.swift in Sources */,
-				5333E22C24AC2776006D07F7 /* TopicApi.swift in Sources */,
 				5333E1EA24AC26B1006D07F7 /* V2RefreshHeader.swift in Sources */,
 				5333E15324AB406A006D07F7 /* ViewController.swift in Sources */,
 				5333E1E424AC26B1006D07F7 /* TopicDetailToolCell.swift in Sources */,
@@ -602,7 +598,7 @@
 				5333E1E824AC26B1006D07F7 /* V2ActivityViewController.swift in Sources */,
 				5333E1EC24AC26B1006D07F7 /* PodCellTableViewCell.swift in Sources */,
 				5333E22024AC2739006D07F7 /* BaseViewController.swift in Sources */,
-				5333E22D24AC2776006D07F7 /* TopicListApi.swift in Sources */,
+				5333E22D24AC2776006D07F7 /* YuanCommunityApi.swift in Sources */,
 				5333E1F524AC26B1006D07F7 /* V2PhotoBrowserTransionDismiss.swift in Sources */,
 				5333E21F24AC2739006D07F7 /* WritingViewController.swift in Sources */,
 				5333E18724AC21DA006D07F7 /* YuanCommunUser.swift in Sources */,

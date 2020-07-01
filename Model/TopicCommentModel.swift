@@ -224,7 +224,7 @@ extension TopicCommentModel {
     
     class func replyThankWithReplyId(_ replyId:String , token:String ,completionHandler: @escaping (V2Response) -> Void) {
         
-        _ = TopicApi.provider.requestAPI(.thankReply(replyId: replyId, once: token))
+        _ = YuanCommunityApi.provider.requestAPI(.thankReply(replyId: replyId, once: token))
             .filterResponseError().subscribe(onNext: { (response) in
             if response["success"].boolValue {
                 completionHandler(V2Response(success: true))

@@ -158,7 +158,7 @@ extension TopicDetailModel {
      */
     class func topicThankWithTopicId(_ topicId:String , token:String ,completionHandler: @escaping (V2Response) -> Void) {
         
-        _ = TopicApi.provider.requestAPI(.thankTopic(topicId: topicId, once: token))
+        _ = YuanCommunityApi.provider.requestAPI(.thankTopic(topicId: topicId, once: token))
             .filterResponseError().subscribe(onNext: { (response) in
             if response["success"].boolValue {
                 completionHandler(V2Response(success: true))

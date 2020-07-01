@@ -1,5 +1,5 @@
 //
-//  TopicListApi.swift
+//  YuanCommunityApi.swift
 //  YuanCommunityV2ex
 //
 //  Created by xuzhou on 2020/05/27.
@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Moya
 
-enum TopicListApi {
+enum YuanCommunityApi {
     //获取首页列表
     case topicList(tab: String?, page: Int)
     //获取我的收藏帖子列表
@@ -17,9 +18,22 @@ enum TopicListApi {
     case nodeTopicList(nodeName: String, page:Int)
     
     case getUserInfo(username:String)
+    case thankReply(replyId:String, once:String)
+    case thankTopic(topicId:String, once:String)
 }
 
-extension TopicListApi: V2EXTargetType {
+extension YuanCommunityApi: V2EXTargetType {
+
+    var method: Moya.Method {
+        switch self {
+        case .thankReply: return .post
+        case .thankTopic: return .post
+        default:
+            return .get
+        }
+                
+    }
+    
     var parameters: [String : Any]? {
         switch self {
         case let .topicList(tab, page):
@@ -34,6 +48,10 @@ extension TopicListApi: V2EXTargetType {
             return ["p": page]
         case let .getUserInfo(username):
             return ["username": username]
+        case let .thankReply( _ , once):
+            return ["once": once]
+        case let .thankTopic( _ , once):
+            return ["once": once]
         }
         
     }
@@ -51,7 +69,10 @@ extension TopicListApi: V2EXTargetType {
             return "/go/\(nodeName)"
         case .getUserInfo:
             return "/api/members/show.json"
-            
+        case let .thankReply(replyId, _):
+            return "/thank/reply/\(replyId)"
+        case let .thankTopic(replyId, _):
+            return "/thank/topic/\(replyId)"
         }
     }
     

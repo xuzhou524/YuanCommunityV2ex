@@ -70,7 +70,7 @@ class MainViewController: UIViewController {
         }
         
         //根据 tab name 获取帖子列表
-        _ = TopicListApi.provider
+        _ = YuanCommunityApi.provider
             .requestAPI(.topicList(tab: tab, page: 0))
             .mapResponseToJiArray(TopicListModel.self)
             .subscribe(onNext: { (response) in
@@ -116,7 +116,7 @@ class MainViewController: UIViewController {
         
         //根据 tab name 获取帖子列表
         self.currentPage += 1
-        _ = TopicListApi.provider
+        _ = YuanCommunityApi.provider
             .requestAPI(.topicList(tab: tab, page: self.currentPage))
             .mapResponseToJiArray(TopicListModel.self)
             .subscribe(onNext: { (response) in

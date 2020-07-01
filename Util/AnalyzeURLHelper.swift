@@ -12,7 +12,7 @@ class AnalyzeURLHelper {
     /**
      分析URL 进行相应的操作
 
-     - parameter url: 各种URL 例如https://baidu.com 、/member/finab 、/t/100000
+     - parameter url: 各种URL 例如https://baidu.com 、/member/AaronXu 、/t/100000
      */
     @discardableResult
     class func Analyze(_ url:String) -> Bool {
@@ -203,14 +203,14 @@ extension AnalyzeURLHelper {
      */
     class func test() -> Void {
         var urls  = [
-            "http://v2ex.com/member/finab",
-            "https://v2ex.com/member/finab",
-            "http://www.v2ex.com/member/finab",
-            "https://www.v2ex.com/member/finab",
-            "v2ex.com/member/finab",
-            "www.v2ex.com/member/finab",
-            "/member/finab",
-            "/MEMBER/finab"
+            "http://v2ex.com/member/AaronXu",
+            "https://v2ex.com/member/AaronXu",
+            "http://www.v2ex.com/member/AaronXu",
+            "https://www.v2ex.com/member/AaronXu",
+            "v2ex.com/member/AaronXu",
+            "www.v2ex.com/member/AaronXu",
+            "/member/AaronXu",
+            "/MEMBER/AaronXu"
         ]
         urls.forEach { (url) in
             let result = AnalyzURLResultType(url: url)
@@ -224,9 +224,9 @@ extension AnalyzeURLHelper {
         }
         
         urls = [
-            "member/finab",
-            "www.baidu.com/member/finab",
-            "com/member/finab",
+            "member/AaronXu",
+            "www.baidu.com/member/AaronXu",
+            "com/member/AaronXu",
             "www.baidu.com",
             "http://www.baidu.com"
         ]

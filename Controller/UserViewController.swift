@@ -3,7 +3,7 @@
 //  YuanCommunityV2ex
 //
 //  Created by gozap on 2020/6/8.
-//  Copyright © 2020 Fin. All rights reserved.
+//  Copyright © 2020 xuzhou. All rights reserved.
 //
 
 import UIKit

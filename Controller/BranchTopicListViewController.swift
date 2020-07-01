@@ -83,7 +83,7 @@ class BranchTopicListViewController: BaseViewController ,UITableViewDataSource,U
         }
         
         //根据 tab name 获取帖子列表
-        _ = TopicListApi.provider
+        _ = YuanCommunityApi.provider
             .requestAPI(.nodeTopicList(nodeName: self.node!.nodeId!, page: self.currentPage))
             .getJiDataFirst { (ji) in
                 if let node = ji.xPath("//*[@id='Wrapper']/div/div[1]/div[1]/div[1]/a")?.first{
@@ -115,7 +115,7 @@ class BranchTopicListViewController: BaseViewController ,UITableViewDataSource,U
         
         self.currentPage += 1
         
-        _ = TopicListApi.provider
+        _ = YuanCommunityApi.provider
             .requestAPI(.nodeTopicList(nodeName: self.node!.nodeId!, page: self.currentPage))
             .mapResponseToJiArray(NodeTopicListModel.self)
             .subscribe(onNext: { (response) in
