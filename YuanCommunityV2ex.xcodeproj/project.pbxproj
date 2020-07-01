@@ -13,6 +13,10 @@
 		5333E15924AB406A006D07F7 /* YuanCommunityV2ex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5333E15724AB406A006D07F7 /* YuanCommunityV2ex.xcdatamodeld */; };
 		5333E15B24AB406F006D07F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5333E15A24AB406F006D07F7 /* Assets.xcassets */; };
 		5333E15E24AB406F006D07F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5333E15C24AB406F006D07F7 /* LaunchScreen.storyboard */; };
+		5333E17424AC1C71006D07F7 /* LDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5333E16F24AC1C70006D07F7 /* LDTabBar.m */; };
+		5333E17524AC1C71006D07F7 /* LDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5333E17124AC1C70006D07F7 /* LDNavigationController.m */; };
+		5333E17624AC1C71006D07F7 /* LDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5333E17224AC1C70006D07F7 /* LDColor.m */; };
+		5333E17724AC1C71006D07F7 /* LDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5333E17324AC1C71006D07F7 /* LDTabBarController.m */; };
 		81350DA10C4251CBC7C5FE3C /* libPods-YuanCommunityV2ex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5618883ED402FDD93BE77FE0 /* libPods-YuanCommunityV2ex.a */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,15 @@
 		5333E15A24AB406F006D07F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5333E15D24AB406F006D07F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5333E15F24AB406F006D07F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5333E16B24AC1C6F006D07F7 /* YuanCommunityV2ex-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YuanCommunityV2ex-Bridging-Header.h"; sourceTree = "<group>"; };
+		5333E16C24AC1C70006D07F7 /* LDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDTabBarController.h; sourceTree = "<group>"; };
+		5333E16D24AC1C70006D07F7 /* LDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNavigationController.h; sourceTree = "<group>"; };
+		5333E16E24AC1C70006D07F7 /* LDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDColor.h; sourceTree = "<group>"; };
+		5333E16F24AC1C70006D07F7 /* LDTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDTabBar.m; sourceTree = "<group>"; };
+		5333E17024AC1C70006D07F7 /* LDTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDTabBar.h; sourceTree = "<group>"; };
+		5333E17124AC1C70006D07F7 /* LDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNavigationController.m; sourceTree = "<group>"; };
+		5333E17224AC1C70006D07F7 /* LDColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDColor.m; sourceTree = "<group>"; };
+		5333E17324AC1C71006D07F7 /* LDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDTabBarController.m; sourceTree = "<group>"; };
 		5618883ED402FDD93BE77FE0 /* libPods-YuanCommunityV2ex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YuanCommunityV2ex.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC09CA7FC3D5AC2B0136A104 /* Pods-YuanCommunityV2ex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuanCommunityV2ex.debug.xcconfig"; path = "Target Support Files/Pods-YuanCommunityV2ex/Pods-YuanCommunityV2ex.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +67,11 @@
 		5333E14224AB406A006D07F7 = {
 			isa = PBXGroup;
 			children = (
+				5333E16A24AC1C4B006D07F7 /* Resources */,
+				5333E16924AC1C3F006D07F7 /* Util */,
+				5333E16824AC1C35006D07F7 /* Model */,
+				5333E16724AC1C2A006D07F7 /* View */,
+				5333E16524AC1C15006D07F7 /* Controller */,
 				5333E14D24AB406A006D07F7 /* YuanCommunityV2ex */,
 				5333E14C24AB406A006D07F7 /* Products */,
 				1A9ED9E4B2FC8B46D4A0CEF0 /* Pods */,
@@ -81,6 +99,50 @@
 				5333E15724AB406A006D07F7 /* YuanCommunityV2ex.xcdatamodeld */,
 			);
 			path = YuanCommunityV2ex;
+			sourceTree = "<group>";
+		};
+		5333E16524AC1C15006D07F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5333E16724AC1C2A006D07F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5333E16824AC1C35006D07F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5333E16924AC1C3F006D07F7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5333E16E24AC1C70006D07F7 /* LDColor.h */,
+				5333E17224AC1C70006D07F7 /* LDColor.m */,
+				5333E16D24AC1C70006D07F7 /* LDNavigationController.h */,
+				5333E17124AC1C70006D07F7 /* LDNavigationController.m */,
+				5333E17024AC1C70006D07F7 /* LDTabBar.h */,
+				5333E16F24AC1C70006D07F7 /* LDTabBar.m */,
+				5333E16C24AC1C70006D07F7 /* LDTabBarController.h */,
+				5333E17324AC1C71006D07F7 /* LDTabBarController.m */,
+				5333E16B24AC1C6F006D07F7 /* YuanCommunityV2ex-Bridging-Header.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		5333E16A24AC1C4B006D07F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F683D8069CFB2035FF66EA1F /* Frameworks */ = {
@@ -125,6 +187,7 @@
 				TargetAttributes = {
 					5333E14A24AB406A006D07F7 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -206,7 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5333E17524AC1C71006D07F7 /* LDNavigationController.m in Sources */,
+				5333E17724AC1C71006D07F7 /* LDTabBarController.m in Sources */,
+				5333E17624AC1C71006D07F7 /* LDColor.m in Sources */,
 				5333E15324AB406A006D07F7 /* ViewController.swift in Sources */,
+				5333E17424AC1C71006D07F7 /* LDTabBar.m in Sources */,
 				5333E15924AB406A006D07F7 /* YuanCommunityV2ex.xcdatamodeld in Sources */,
 				5333E14F24AB406A006D07F7 /* AppDelegate.swift in Sources */,
 			);
@@ -353,6 +420,7 @@
 			baseConfigurationReference = CC09CA7FC3D5AC2B0136A104 /* Pods-YuanCommunityV2ex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
 				INFOPLIST_FILE = YuanCommunityV2ex/Info.plist;
@@ -364,6 +432,8 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xuzhou.YuanCommunityV2ex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Util/YuanCommunityV2ex-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -374,6 +444,7 @@
 			baseConfigurationReference = 2C16B37FF9E2D0092F979F2A /* Pods-YuanCommunityV2ex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
 				INFOPLIST_FILE = YuanCommunityV2ex/Info.plist;
@@ -385,6 +456,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xuzhou.YuanCommunityV2ex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Util/YuanCommunityV2ex-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
