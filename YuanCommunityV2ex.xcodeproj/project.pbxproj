@@ -105,6 +105,7 @@
 		5333E24224AC29A3006D07F7 /* lightStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 5333E23E24AC29A3006D07F7 /* lightStyle.css */; };
 		5333E24324AC29A3006D07F7 /* font.css in Resources */ = {isa = PBXBuildFile; fileRef = 5333E23F24AC29A3006D07F7 /* font.css */; };
 		5333E24424AC29A3006D07F7 /* darkStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 5333E24024AC29A3006D07F7 /* darkStyle.css */; };
+		5333E24724AC695C006D07F7 /* YuanCommunityV2ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5333E24624AC695C006D07F7 /* YuanCommunityV2ex.m */; };
 		81350DA10C4251CBC7C5FE3C /* libPods-YuanCommunityV2ex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5618883ED402FDD93BE77FE0 /* libPods-YuanCommunityV2ex.a */; };
 /* End PBXBuildFile section */
 
@@ -215,6 +216,8 @@
 		5333E23E24AC29A3006D07F7 /* lightStyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = lightStyle.css; sourceTree = "<group>"; };
 		5333E23F24AC29A3006D07F7 /* font.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = font.css; sourceTree = "<group>"; };
 		5333E24024AC29A3006D07F7 /* darkStyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = darkStyle.css; sourceTree = "<group>"; };
+		5333E24524AC695C006D07F7 /* YuanCommunityV2ex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YuanCommunityV2ex.h; sourceTree = "<group>"; };
+		5333E24624AC695C006D07F7 /* YuanCommunityV2ex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuanCommunityV2ex.m; sourceTree = "<group>"; };
 		5618883ED402FDD93BE77FE0 /* libPods-YuanCommunityV2ex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YuanCommunityV2ex.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC09CA7FC3D5AC2B0136A104 /* Pods-YuanCommunityV2ex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuanCommunityV2ex.debug.xcconfig"; path = "Target Support Files/Pods-YuanCommunityV2ex/Pods-YuanCommunityV2ex.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -272,6 +275,8 @@
 				5333E15C24AB406F006D07F7 /* LaunchScreen.storyboard */,
 				5333E15F24AB406F006D07F7 /* Info.plist */,
 				5333E15724AB406A006D07F7 /* YuanCommunityV2ex.xcdatamodeld */,
+				5333E24524AC695C006D07F7 /* YuanCommunityV2ex.h */,
+				5333E24624AC695C006D07F7 /* YuanCommunityV2ex.m */,
 			);
 			path = YuanCommunityV2ex;
 			sourceTree = "<group>";
@@ -590,6 +595,7 @@
 				5333E1F424AC26B1006D07F7 /* V2PhotoBrowser.swift in Sources */,
 				5333E18924AC2227006D07F7 /* UserModel.swift in Sources */,
 				5333E1F124AC26B1006D07F7 /* V2RefreshFooter.swift in Sources */,
+				5333E24724AC695C006D07F7 /* YuanCommunityV2ex.m in Sources */,
 				5333E22224AC2739006D07F7 /* BranchTopicListViewController.swift in Sources */,
 				5333E19D24AC2302006D07F7 /* XZClient.swift in Sources */,
 				5333E1F824AC26B1006D07F7 /* V2PhotoBrowserSwipeInteractiveTransition.swift in Sources */,
@@ -782,6 +788,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
 				INFOPLIST_FILE = YuanCommunityV2ex/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -789,8 +796,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xuzhou.YuanCommunityV2ex;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xuzhou.V2ex-Swift";
 				PRODUCT_NAME = "猿社区";
 				SWIFT_OBJC_BRIDGING_HEADER = "Util/YuanCommunityV2ex-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -806,6 +813,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
 				INFOPLIST_FILE = YuanCommunityV2ex/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -813,8 +821,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xuzhou.YuanCommunityV2ex;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xuzhou.V2ex-Swift";
 				PRODUCT_NAME = "猿社区";
 				SWIFT_OBJC_BRIDGING_HEADER = "Util/YuanCommunityV2ex-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

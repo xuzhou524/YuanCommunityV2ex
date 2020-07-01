@@ -6,6 +6,30 @@ PODS:
   - CXSwipeGestureRecognizer (1.1.0)
   - DeviceKit (2.3.0)
   - FDFullscreenPopGesture (1.1)
+  - Google-Mobile-Ads-SDK (7.52.0):
+    - GoogleAppMeasurement (~> 6.0)
+  - GoogleAppMeasurement (6.1.6):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleUtilities/AppDelegateSwizzler (6.3.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.3.2)
+  - GoogleUtilities/Logger (6.3.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.3.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.3.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.3.2)"
+  - GoogleUtilities/Reachability (6.3.2):
+    - GoogleUtilities/Logger
   - Ji (5.0.0)
   - KeychainSwift (18.0.0)
   - Kingfisher (4.10.1)
@@ -17,6 +41,11 @@ PODS:
   - Moya/RxSwift (13.0.1):
     - Moya/Core
     - RxSwift (~> 4.0)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
   - ObjectMapper (3.5.1)
   - Result (4.1.0)
   - RxSwift (4.5.0)
@@ -32,6 +61,7 @@ DEPENDENCIES:
   - CXSwipeGestureRecognizer
   - DeviceKit
   - FDFullscreenPopGesture
+  - Google-Mobile-Ads-SDK
   - Ji
   - KeychainSwift
   - Kingfisher (~> 4.10.0)
@@ -52,12 +82,16 @@ SPEC REPOS:
     - CXSwipeGestureRecognizer
     - DeviceKit
     - FDFullscreenPopGesture
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleUtilities
     - Ji
     - KeychainSwift
     - Kingfisher
     - KVOController
     - MJRefresh
     - Moya
+    - nanopb
     - ObjectMapper
     - Result
     - RxSwift
@@ -73,12 +107,16 @@ SPEC CHECKSUMS:
   CXSwipeGestureRecognizer: 5a53916aa69e85d041c35b5fc2180ff0bfe6333b
   DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  Google-Mobile-Ads-SDK: 62f6244637306cb60a1b4adda067f53224c7a860
+  GoogleAppMeasurement: dfe55efa543e899d906309eaaac6ca26d249862f
+  GoogleUtilities: 547a86735c6f0ee30ad17e94df4fc21f616b71cb
   Ji: d795fed288fe78658b404c88946d753b17d8d7f4
   KeychainSwift: c46e1438d121e47459fb304ac88c5e058a2a91ed
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
@@ -88,6 +126,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 1aa2b74c5a3d4f26d2a786ea412396e0059a0e63
+PODFILE CHECKSUM: f71fa292bf980fa6d0e2cac27abe4bb33e62900b
 
 COCOAPODS: 1.7.3

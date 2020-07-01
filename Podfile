@@ -15,7 +15,7 @@ def pods
   pod 'SVProgressHUD'
   pod 'MJRefresh', '~> 3.1.15.7'
   pod 'CXSwipeGestureRecognizer'
-
+  pod 'Google-Mobile-Ads-SDK'
   pod 'Shimmer'
   pod 'FDFullscreenPopGesture'
   pod 'Moya/RxSwift'
