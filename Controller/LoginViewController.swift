@@ -24,10 +24,7 @@ class LoginViewController: UIViewController {
         
         userNameTextField.textColor = XZSwiftColor.leftNodeTintColor
         userNameTextField.font = v2Font(15)
-//        userNameTextField.layer.cornerRadius = 3;
-//        userNameTextField.layer.borderWidth = 0.5
         userNameTextField.keyboardType = .asciiCapable
-//        userNameTextField.layer.borderColor = UIColor(white: 0, alpha: 0.8).cgColor;
         userNameTextField.placeholder = "用户名"
         userNameTextField.clearButtonMode = .always
 
@@ -45,11 +42,8 @@ class LoginViewController: UIViewController {
         let passwordTextField = UITextField()
         passwordTextField.textColor = XZSwiftColor.leftNodeTintColor
         passwordTextField.font = v2Font(15)
-//        passwordTextField.layer.cornerRadius = 3;
-//        passwordTextField.layer.borderWidth = 0.5
         passwordTextField.keyboardType = .asciiCapable
         passwordTextField.isSecureTextEntry = true
-//        passwordTextField.layer.borderColor = UIColor(white: 0, alpha: 0.8).cgColor;
         passwordTextField.placeholder = "密码"
         passwordTextField.clearButtonMode = .always
 
@@ -67,10 +61,7 @@ class LoginViewController: UIViewController {
         let codeTextField = UITextField()
         codeTextField.textColor = XZSwiftColor.leftNodeTintColor
         codeTextField.font = v2Font(15)
-//        codeTextField.layer.cornerRadius = 3;
-//        codeTextField.layer.borderWidth = 0.5
         codeTextField.keyboardType = .asciiCapable
-//        codeTextField.layer.borderColor = UIColor(white: 0, alpha: 0.8).cgColor;
         codeTextField.placeholder = "验证码"
         codeTextField.clearButtonMode = .always
         
@@ -97,11 +88,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        
-        //初始化界面
         self.setupView()
-
-        //绑定事件
         self.loginButton.addTarget(self, action: #selector(LoginViewController.loginClick(_:)), for: .touchUpInside)
         self.cancelButton.addTarget(self, action: #selector(LoginViewController.cancelClick), for: .touchUpInside)
     }
@@ -273,8 +260,7 @@ extension LoginViewController {
             make.left.right.bottom.equalTo(self.userNameTextField)
             make.height.equalTo(SEPARATOR_HEIGHT)
         }
-
-
+        
         self.view.addSubview(self.passwordTextField);
         self.passwordTextField.snp.makeConstraints{ (make) -> Void in
             make.top.equalTo(self.userNameTextField.snp.bottom).offset(15)
@@ -336,8 +322,6 @@ extension LoginViewController {
         self.loginButton.titleLabel!.font = v2Font(16)
         self.loginButton.layer.cornerRadius = 5;
         self.loginButton.layer.masksToBounds = true
-//        self.loginButton.layer.borderWidth = 0.5
-//        self.loginButton.layer.borderColor = UIColor(white: 0, alpha: 0.8).cgColor;
         self.view.addSubview(self.loginButton);
 
         self.loginButton.snp.makeConstraints{ (make) -> Void in
