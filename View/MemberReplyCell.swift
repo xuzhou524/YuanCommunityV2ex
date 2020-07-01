@@ -62,7 +62,7 @@ class MemberReplyCell: UITableViewCell {
         self.setupLayout()
         
         let dropUpImageView = UIImageView()
-        dropUpImageView.image = UIImage.imageUsedTemplateMode("ic_arrow_drop_up")
+        dropUpImageView.image = UIImage.init(named: "ic_arrow_drop_up")
         dropUpImageView.contentMode = .scaleAspectFit
         self.contentPanel.addSubview(dropUpImageView)
         dropUpImageView.snp.makeConstraints{ (make) -> Void in

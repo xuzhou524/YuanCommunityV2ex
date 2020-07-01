@@ -150,7 +150,7 @@ extension ValidationViewController {
         self.codeTextField.placeholder = "验证码"
         self.codeTextField.clearButtonMode = .always
         
-        let passwordIconImageView = UIImageView(image: UIImage(named: "ic_lock")!.withRenderingMode(.alwaysTemplate));
+        let passwordIconImageView = UIImageView(image: UIImage.init(named: "ic_lock"));
         passwordIconImageView.frame = CGRect(x: 0, y: 0, width: 34, height: 22)
         passwordIconImageView.contentMode = .scaleAspectFit
         self.codeTextField.leftView = passwordIconImageView
@@ -178,7 +178,7 @@ extension ValidationViewController {
         }
         
         self.cancelButton.contentMode = .center
-        cancelButton .setImage(UIImage(named: "ic_cancel")!.withRenderingMode(.alwaysTemplate), for: .normal)
+        cancelButton .setImage(UIImage.init(named: "ic_cancel"), for: .normal)
         vibrancyView.contentView.addSubview(cancelButton)
         cancelButton.snp.makeConstraints{ (make) -> Void in
             make.bottom.equalTo(vibrancyView).offset(-25)

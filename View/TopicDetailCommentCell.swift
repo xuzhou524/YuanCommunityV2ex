@@ -53,7 +53,7 @@ class TopicDetailCommentCell: UITableViewCell{
     
     //评论喜欢数
     var favoriteIconView:UIImageView = {
-        let favoriteIconView = UIImageView(image: UIImage.imageUsedTemplateMode("ic_favorite_18pt")!)
+        let favoriteIconView = UIImageView(image: UIImage.init(named: "ic_favorite_18pt")!)
         favoriteIconView.contentMode = .scaleAspectFit
         favoriteIconView.isHidden = true
         return favoriteIconView

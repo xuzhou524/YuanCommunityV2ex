@@ -31,7 +31,7 @@ class AccountsManagerViewController: UIViewController,UITableViewDataSource,UITa
         let warningButton = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         warningButton.contentMode = .center
         warningButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -20)
-        warningButton.setImage(UIImage.imageUsedTemplateMode("ic_warning"), for: .normal)
+        warningButton.setImage(UIImage.init(named: "ic_arrow_downward"), for: .normal)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: warningButton)
         warningButton.addTarget(self, action: #selector(AccountsManagerViewController.warningClick), for: .touchUpInside)
 

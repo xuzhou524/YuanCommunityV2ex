@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
         userNameTextField.placeholder = "用户名"
         userNameTextField.clearButtonMode = .always
 
-        let userNameIconImageView = UIImageView(image: UIImage(named: "ic_account_circle")!.withRenderingMode(.alwaysTemplate));
+        let userNameIconImageView = UIImageView(image: UIImage.init(named: "ic_account_circle"));
         userNameIconImageView.frame = CGRect(x: 0, y: 0, width: 34, height: 22)
         userNameIconImageView.tintColor = XZSwiftColor.leftNodeTintColor
         userNameIconImageView.contentMode = .scaleAspectFit
@@ -47,7 +47,7 @@ class LoginViewController: UIViewController {
         passwordTextField.placeholder = "密码"
         passwordTextField.clearButtonMode = .always
 
-        let passwordIconImageView = UIImageView(image: UIImage(named: "ic_lock")!.withRenderingMode(.alwaysTemplate));
+        let passwordIconImageView = UIImageView(image: UIImage.init(named: "ic_lock"));
         passwordIconImageView.frame = CGRect(x: 0, y: 0, width: 34, height: 22)
         passwordIconImageView.contentMode = .scaleAspectFit
         passwordIconImageView.tintColor = XZSwiftColor.leftNodeTintColor
@@ -65,7 +65,7 @@ class LoginViewController: UIViewController {
         codeTextField.placeholder = "验证码"
         codeTextField.clearButtonMode = .always
         
-        let codeTextFieldImageView = UIImageView(image: UIImage(named: "ic_vpn_key")!.withRenderingMode(.alwaysTemplate));
+        let codeTextFieldImageView = UIImageView(image: UIImage.init(named: "ic_vpn_key"));
         codeTextFieldImageView.frame = CGRect(x: 0, y: 0, width: 34, height: 22)
         codeTextFieldImageView.contentMode = .scaleAspectFit
         codeTextFieldImageView.tintColor = XZSwiftColor.leftNodeTintColor

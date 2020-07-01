@@ -22,7 +22,7 @@ class BaseDetailTableViewCell: UITableViewCell {
     }()
     
     var detailMarkImageView:UIImageView = {
-        let imageview = UIImageView(image: UIImage.imageUsedTemplateMode("ic_rightArrow"))
+        let imageview = UIImageView(image: UIImage.init(named: "ic_rightArrow"))
         imageview.contentMode = .center
         return imageview
     }()

@@ -59,7 +59,7 @@ class NotificationTableViewCell: UITableViewCell {
     
     lazy var dropUpImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage.imageUsedTemplateMode("ic_arrow_drop_up")
+        imageView.image = UIImage.init(named: "ic_arrow_drop_up")
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()

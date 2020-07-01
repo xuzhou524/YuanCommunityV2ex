@@ -45,7 +45,7 @@ class V2RefreshHeader: MJRefreshHeader {
         self.loadingView = UIActivityIndicatorView(style: .white)
         self.addSubview(self.loadingView!)
         
-        self.arrowImage = UIImageView(image: UIImage.imageUsedTemplateMode("ic_arrow_downward"))
+        self.arrowImage = UIImageView(image: UIImage.init(named: "ic_arrow_downward"))
         self.addSubview(self.arrowImage!)
         
         self.loadingView?.style = .gray
