@@ -30,12 +30,6 @@ let V2EXURL = "https://www.v2ex.com/"
 
 let SEPARATOR_HEIGHT = 1.0 / UIScreen.main.scale
 
-
-func NSLocalizedString( _ key:String ) -> String {
-    return NSLocalizedString(key, comment: "")
-}
-
-
 func dispatch_sync_safely_main_queue(_ block: ()->()) {
     if Thread.isMainThread {
         block()

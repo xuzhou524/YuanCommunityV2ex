@@ -26,7 +26,7 @@ class AccountsManagerViewController: UIViewController,UITableViewDataSource,UITa
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = NSLocalizedString("accounts")
+        self.title = "账户"
 
         let warningButton = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         warningButton.contentMode = .center

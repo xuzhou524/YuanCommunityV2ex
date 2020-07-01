@@ -36,7 +36,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         self.title = "首页"
         if (tab != nil) && (tab != "all"){
-            self.title = NSLocalizedString(tab ?? "all")
+            self.title = tab
         }
  
         //监听程序即将进入前台运行、进入后台休眠 事件
@@ -83,7 +83,7 @@ class MainViewController: UIViewController {
                     refreshFooter.resetNoMoreData()
                 }
                 else{
-                    refreshFooter.noMoreDataStateString = "没更多帖子了,只有【\(NSLocalizedString("all"))】标签能翻页"
+                    refreshFooter.noMoreDataStateString = "没更多帖子了,只有【\("全部")】标签能翻页"
                     refreshFooter.endRefreshingWithNoMoreData()
                 }
                 

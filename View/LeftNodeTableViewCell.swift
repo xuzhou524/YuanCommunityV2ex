@@ -108,7 +108,7 @@ class LeftNotifictionCell : LeftNodeTableViewCell{
     
     override func setup() {
         super.setup()
-        self.nodeNameLabel.text = NSLocalizedString("notifications")
+        self.nodeNameLabel.text = "消息提醒"
         
         self.contentView.addSubview(self.notifictionCountLabel)
         self.notifictionCountLabel.snp.makeConstraints{ (make) -> Void in

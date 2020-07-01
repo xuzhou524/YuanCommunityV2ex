@@ -286,8 +286,10 @@
 		5333E16524AC1C15006D07F7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5333E21224AC2738006D07F7 /* AccountsManagerViewController.swift */,
 				5333E20E24AC2737006D07F7 /* BaseViewController.swift */,
+				5333E18024AC205B006D07F7 /* MainViewController.swift */,
+				5333E21624AC2738006D07F7 /* RightViewController.swift */,
+				5333E21224AC2738006D07F7 /* AccountsManagerViewController.swift */,
 				5333E20624AC2735006D07F7 /* FavoritesViewController.swift */,
 				5333E20724AC2736006D07F7 /* LoginViewController.swift */,
 				5333E20B24AC2736006D07F7 /* MemberViewController.swift */,
@@ -296,12 +298,10 @@
 				5333E21024AC2737006D07F7 /* NodeTopicListViewController.swift */,
 				5333E21324AC2738006D07F7 /* NotificationsViewController.swift */,
 				5333E21424AC2738006D07F7 /* RelevantCommentsViewController.swift */,
-				5333E21624AC2738006D07F7 /* RightViewController.swift */,
 				5333E20524AC2735006D07F7 /* TopicDetailViewController.swift */,
 				5333E20924AC2736006D07F7 /* TwoFAViewController.swift */,
 				5333E21124AC2737006D07F7 /* UserViewController.swift */,
 				5333E20D24AC2737006D07F7 /* WritingViewController.swift */,
-				5333E18024AC205B006D07F7 /* MainViewController.swift */,
 				5333E1BE24AC25BD006D07F7 /* XZWebViewViewController.swift */,
 			);
 			path = Controller;

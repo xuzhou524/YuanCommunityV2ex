@@ -28,7 +28,7 @@ class NotificationsViewController: BaseViewController,UITableViewDataSource,UITa
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(self.tableView);
-        self.title = NSLocalizedString("notifications")
+        self.title = "消息提醒"
         
         self.tableView.snp.makeConstraints{ (make) -> Void in
             make.top.right.bottom.left.equalTo(self.view);

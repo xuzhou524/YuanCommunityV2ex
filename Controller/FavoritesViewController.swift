@@ -27,7 +27,7 @@ class FavoritesViewController: BaseViewController,UITableViewDataSource,UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = NSLocalizedString("favorites")
+        self.title = "我的收藏"
         self.view.addSubview(self.tableView);
         self.tableView.snp.makeConstraints{ (make) -> Void in
             make.top.right.bottom.left.equalTo(self.view);

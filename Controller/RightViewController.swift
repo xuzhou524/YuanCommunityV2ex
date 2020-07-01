@@ -9,19 +9,19 @@
 import UIKit
 
 let RightViewControllerRightNodes = [
-    rightNodeModel(nodeName: NSLocalizedString("tech" ), nodeTab: "tech"),
-    rightNodeModel(nodeName: NSLocalizedString("creative" ), nodeTab: "creative"),
-    rightNodeModel(nodeName: NSLocalizedString("play" ), nodeTab: "play"),
-    rightNodeModel(nodeName: NSLocalizedString("apple" ), nodeTab: "apple"),
-    rightNodeModel(nodeName: NSLocalizedString("jobs" ), nodeTab: "jobs"),
-    rightNodeModel(nodeName: NSLocalizedString("deals" ), nodeTab: "deals"),
-    rightNodeModel(nodeName: NSLocalizedString("city" ), nodeTab: "city"),
-    rightNodeModel(nodeName: NSLocalizedString("qna" ), nodeTab: "qna"),
-    rightNodeModel(nodeName: NSLocalizedString("hot"), nodeTab: "hot"),
-    rightNodeModel(nodeName: NSLocalizedString("all"), nodeTab: "all"),
-    rightNodeModel(nodeName: NSLocalizedString("r2" ), nodeTab: "r2"),
-    rightNodeModel(nodeName: NSLocalizedString("nodes" ), nodeTab: "nodes"),
-    rightNodeModel(nodeName: NSLocalizedString("members" ), nodeTab: "members"),
+    rightNodeModel(nodeName: "技术", nodeTab: "tech"),
+    rightNodeModel(nodeName: "创意", nodeTab: "creative"),
+    rightNodeModel(nodeName: "好玩", nodeTab: "play"),
+    rightNodeModel(nodeName: "Apple", nodeTab: "apple"),
+    rightNodeModel(nodeName: "酷工作", nodeTab: "jobs"),
+    rightNodeModel(nodeName: "交易", nodeTab: "deals"),
+    rightNodeModel(nodeName: "城市", nodeTab: "city"),
+    rightNodeModel(nodeName: "问与答", nodeTab: "qna"),
+    rightNodeModel(nodeName: "最热", nodeTab: "hot"),
+    rightNodeModel(nodeName: "全部", nodeTab: "all"),
+    rightNodeModel(nodeName: "R2", nodeTab: "r2"),
+    rightNodeModel(nodeName: "节点", nodeTab: "nodes"),
+    rightNodeModel(nodeName: "关注", nodeTab: "members"),
 ]
 class RightViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     let rightNodes = RightViewControllerRightNodes

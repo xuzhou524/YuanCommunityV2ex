@@ -12,7 +12,7 @@ class NodesViewController: BaseViewController {
     var collectionView:UICollectionView?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = NSLocalizedString("navigation")
+        self.title = "节点导航"
         
         let layout = V2LeftAlignedCollectionViewFlowLayout();
         layout.sectionInset = UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15);

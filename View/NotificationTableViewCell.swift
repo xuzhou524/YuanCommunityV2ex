@@ -74,7 +74,7 @@ class NotificationTableViewCell: UITableViewCell {
     /// 回复按钮
     var replyButton:UIButton = {
         let button = UIButton.roundedButton()
-        button.setTitle(NSLocalizedString("reply"), for: .normal)
+        button.setTitle("回复", for: .normal)
         return button
     }()
     

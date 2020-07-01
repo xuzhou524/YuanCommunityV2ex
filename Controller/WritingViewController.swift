@@ -62,7 +62,7 @@ class ReplyingViewController:WritingViewController {
     var atSomeone:String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = NSLocalizedString("reply")
+        self.title = "回复"
         if let atSomeone = self.atSomeone {
             let str = NSMutableAttributedString(string: atSomeone)
             str.yy_font = self.textView!.font

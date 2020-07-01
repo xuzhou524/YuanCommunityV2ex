@@ -20,7 +20,7 @@ class LogoutTableViewCell: UITableViewCell {
     func setup()->Void{
         
 
-        self.textLabel!.text = NSLocalizedString("logOut")
+        self.textLabel!.text = "退出当前账号"
         self.textLabel!.textAlignment = .center
         
         let separator = UIImageView()

@@ -24,7 +24,7 @@ class AccountListTableViewCell: UITableViewCell {
     var usedLabel:UILabel = {
         let usedLabel = UILabel()
         usedLabel.font = v2Font(11)
-        usedLabel.text = NSLocalizedString("current")
+        usedLabel.text = "正在使用"
         return usedLabel
     }()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

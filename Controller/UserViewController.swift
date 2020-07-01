@@ -81,13 +81,13 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 let cell = getCell(tableView, cell: LeftNodeTableViewCell.self, indexPath: indexPath)
                 cell.summeryLabel.isHidden = true
                 cell.isHiddenRightImage(hidden: false)
-                cell.nodeNameLabel.text = NSLocalizedString("favorites")
+                cell.nodeNameLabel.text = "我的收藏"
                 cell.nodeImageView.image = UIImage(named: "ic_turned_in_not")
                 return cell
             }
         }else {
             let cell = getCell(tableView, cell: LeftNodeTableViewCell.self, indexPath: indexPath)
-            cell.nodeNameLabel.text = [NSLocalizedString("nodes"),NSLocalizedString("supportDev"),NSLocalizedString("version")][indexPath.row]
+            cell.nodeNameLabel.text = ["节点","给个赞","版本号"][indexPath.row]
             let names = ["ic_navigation","ic_givePraise","ic_settings_input_svideo"]
             cell.nodeImageView.image = UIImage(named: names[indexPath.row])
             if indexPath.row == 2 {

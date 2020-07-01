@@ -201,7 +201,7 @@ class MemberViewController: UIViewController,UITableViewDelegate,UITableViewData
         let view = UIView()
 
         let label = UILabel()
-        label.text = [NSLocalizedString("posts"),NSLocalizedString("comments")][section - 1]
+        label.text = ["创建的主题","创建的回复"][section - 1]
         view.addSubview(label)
         label.font = v2Font(15)
         label.snp.makeConstraints{ (make) -> Void in
