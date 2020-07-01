@@ -1,9 +1,9 @@
 //
 //  FavoritesViewController.swift
-//  V2ex-Swift
+//  YuanCommunityV2ex
 //
-//  Created by huangfeng on 1/30/16.
-//  Copyright © 2016 Fin. All rights reserved.
+//  Created by xuzhou on 2020/06/06.
+//  Copyright © 2020年 xuzhou. All rights reserved.
 //
 
 import UIKit

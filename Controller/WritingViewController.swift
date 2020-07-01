@@ -1,9 +1,9 @@
 //
 //  WritingViewController.swift
-//  V2ex-Swift
+//  YuanCommunityV2ex
 //
-//  Created by huangfeng on 1/25/16.
-//  Copyright © 2016 Fin. All rights reserved.
+//  Created by xuzhou on 2020/06/18.
+//  Copyright © 2020年 xuzhou. All rights reserved.
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class WritingViewController: UIViewController ,YYTextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "写东西"
+        self.title = "写点啥"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "取消", style: .plain, target: self, action: #selector(WritingViewController.leftClick))
 
         let rightButton = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))

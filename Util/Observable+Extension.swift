@@ -1,9 +1,9 @@
 //
 //  Observable+Extension.swift
-//  V2ex-Swift
+//  YuanCommunityV2ex
 //
-//  Created by huangfeng on 2018/6/11.
-//  Copyright © 2018 Fin. All rights reserved.
+//  Created by xuzhou on 20/05/27.
+//  Copyright © 2020年 xuzhou. All rights reserved.
 //
 
 import UIKit

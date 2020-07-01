@@ -1,6 +1,6 @@
 //
 //  V2ProgressHUD.swift
-//  V2ex-Swift
+//  YuanCommunityV2ex
 //
 //  Created by skyline on 16/3/29.
 //  Copyright © 2016年 Fin. All rights reserved.

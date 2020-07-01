@@ -1,9 +1,9 @@
 //
 //  TwoFAViewController.swift
-//  V2ex-Swift
+//  YuanCommunityV2ex
 //
-//  Created by huangfeng on 2017/2/7.
-//  Copyright © 2017年 Fin. All rights reserved.
+//  Created by xuzhou on 2020/06/17.
+//  Copyright © 2020年 xuzhou. All rights reserved.
 //
 
 import UIKit

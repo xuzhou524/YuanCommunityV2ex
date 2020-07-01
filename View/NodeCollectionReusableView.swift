@@ -1,9 +1,9 @@
 //
 //  NodeCollectionReusableView.swift
-//  V2ex-Swift
+//  YuanCommunityV2ex
 //
-//  Created by huangfeng on 16/4/5.
-//  Copyright © 2016年 Fin. All rights reserved.
+//  Created by xuzhou on 2020/05/28.
+//  Copyright © 2020年 xuzhou. All rights reserved.
 //
 
 import UIKit

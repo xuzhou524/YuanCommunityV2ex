@@ -1,9 +1,9 @@
 //
 //  UIImage+Extension.swift
-//  V2ex-Swift
+//  YuanCommunityV2ex
 //
-//  Created by huangfeng on 2/3/16.
-//  Copyright © 2016 Fin. All rights reserved.
+//  Created by xuzhou on 20/05/23.
+//  Copyright © 2020年 xuzhou. All rights reserved.
 //
 
 import UIKit

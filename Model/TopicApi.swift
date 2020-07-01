@@ -1,9 +1,9 @@
 //
 //  TopicApi.swift
-//  V2ex-Swift
+//  YuanCommunityV2ex
 //
-//  Created by huangfeng on 2019/9/2.
-//  Copyright © 2019 Fin. All rights reserved.
+//  Created by xuzhou on 2020/05/27.
+//  Copyright © 2020年 xuzhou. All rights reserved.
 //
 
 import UIKit

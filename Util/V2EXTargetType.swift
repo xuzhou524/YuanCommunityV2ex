@@ -1,9 +1,9 @@
 //
 //  V2EXTargetType.swift
-//  V2ex-Swift
+//  YuanCommunityV2ex
 //
-//  Created by huangfeng on 2017/5/24.
-//  Copyright © 2017年 Fin. All rights reserved.
+//  Created by xuzhou on 20/05/27.
+//  Copyright © 2020年 xuzhou. All rights reserved.
 //
 
 import UIKit

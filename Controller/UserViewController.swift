@@ -1,6 +1,6 @@
 //
 //  UserViewController.swift
-//  V2ex-Swift
+//  YuanCommunityV2ex
 //
 //  Created by gozap on 2020/6/8.
 //  Copyright © 2020 Fin. All rights reserved.
