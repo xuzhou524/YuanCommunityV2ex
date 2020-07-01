@@ -77,7 +77,7 @@
 		5333E1FE24AC26B1006D07F7 /* MemberHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1DC24AC26B0006D07F7 /* MemberHeaderCell.swift */; };
 		5333E1FF24AC26B1006D07F7 /* LeftUserHeadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1DD24AC26B0006D07F7 /* LeftUserHeadCell.swift */; };
 		5333E20024AC26B1006D07F7 /* MemberReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1DE24AC26B0006D07F7 /* MemberReplyCell.swift */; };
-		5333E20124AC26B1006D07F7 /* RightNodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1DF24AC26B1006D07F7 /* RightNodeTableViewCell.swift */; };
+		5333E20124AC26B1006D07F7 /* MenuNodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1DF24AC26B1006D07F7 /* MenuNodeTableViewCell.swift */; };
 		5333E20224AC26B1006D07F7 /* TopicDetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1E024AC26B1006D07F7 /* TopicDetailHeaderCell.swift */; };
 		5333E20324AC26B1006D07F7 /* V2LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1E124AC26B1006D07F7 /* V2LoadingView.swift */; };
 		5333E20424AC26B1006D07F7 /* NodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E1E224AC26B1006D07F7 /* NodeTableViewCell.swift */; };
@@ -95,7 +95,7 @@
 		5333E22424AC2739006D07F7 /* AccountsManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21224AC2738006D07F7 /* AccountsManagerViewController.swift */; };
 		5333E22524AC2739006D07F7 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21324AC2738006D07F7 /* NotificationsViewController.swift */; };
 		5333E22624AC2739006D07F7 /* RelevantCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21424AC2738006D07F7 /* RelevantCommentsViewController.swift */; };
-		5333E22824AC2739006D07F7 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21624AC2738006D07F7 /* RightViewController.swift */; };
+		5333E22824AC2739006D07F7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E21624AC2738006D07F7 /* MenuViewController.swift */; };
 		5333E22C24AC2776006D07F7 /* TopicApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E22A24AC2776006D07F7 /* TopicApi.swift */; };
 		5333E22D24AC2776006D07F7 /* TopicListApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E22B24AC2776006D07F7 /* TopicListApi.swift */; };
 		5333E23524AC2795006D07F7 /* TopicCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E22E24AC2794006D07F7 /* TopicCommentModel.swift */; };
@@ -190,7 +190,7 @@
 		5333E1DC24AC26B0006D07F7 /* MemberHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberHeaderCell.swift; sourceTree = "<group>"; };
 		5333E1DD24AC26B0006D07F7 /* LeftUserHeadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftUserHeadCell.swift; sourceTree = "<group>"; };
 		5333E1DE24AC26B0006D07F7 /* MemberReplyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberReplyCell.swift; sourceTree = "<group>"; };
-		5333E1DF24AC26B1006D07F7 /* RightNodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightNodeTableViewCell.swift; sourceTree = "<group>"; };
+		5333E1DF24AC26B1006D07F7 /* MenuNodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuNodeTableViewCell.swift; sourceTree = "<group>"; };
 		5333E1E024AC26B1006D07F7 /* TopicDetailHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailHeaderCell.swift; sourceTree = "<group>"; };
 		5333E1E124AC26B1006D07F7 /* V2LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2LoadingView.swift; sourceTree = "<group>"; };
 		5333E1E224AC26B1006D07F7 /* NodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeTableViewCell.swift; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 		5333E21224AC2738006D07F7 /* AccountsManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsManagerViewController.swift; sourceTree = "<group>"; };
 		5333E21324AC2738006D07F7 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		5333E21424AC2738006D07F7 /* RelevantCommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelevantCommentsViewController.swift; sourceTree = "<group>"; };
-		5333E21624AC2738006D07F7 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		5333E21624AC2738006D07F7 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		5333E22A24AC2776006D07F7 /* TopicApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicApi.swift; sourceTree = "<group>"; };
 		5333E22B24AC2776006D07F7 /* TopicListApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicListApi.swift; sourceTree = "<group>"; };
 		5333E22E24AC2794006D07F7 /* TopicCommentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCommentModel.swift; sourceTree = "<group>"; };
@@ -288,7 +288,7 @@
 			children = (
 				5333E20E24AC2737006D07F7 /* BaseViewController.swift */,
 				5333E18024AC205B006D07F7 /* MainViewController.swift */,
-				5333E21624AC2738006D07F7 /* RightViewController.swift */,
+				5333E21624AC2738006D07F7 /* MenuViewController.swift */,
 				5333E21224AC2738006D07F7 /* AccountsManagerViewController.swift */,
 				5333E20624AC2735006D07F7 /* FavoritesViewController.swift */,
 				5333E20724AC2736006D07F7 /* LoginViewController.swift */,
@@ -325,7 +325,7 @@
 				5333E1D924AC26B0006D07F7 /* NotificationMenuButton.swift */,
 				5333E1C824AC26AE006D07F7 /* NotificationTableViewCell.swift */,
 				5333E1C924AC26AE006D07F7 /* PodCellTableViewCell.swift */,
-				5333E1DF24AC26B1006D07F7 /* RightNodeTableViewCell.swift */,
+				5333E1DF24AC26B1006D07F7 /* MenuNodeTableViewCell.swift */,
 				5333E1DA24AC26B0006D07F7 /* TopicDetailCommentCell.swift */,
 				5333E1E024AC26B1006D07F7 /* TopicDetailHeaderCell.swift */,
 				5333E1C124AC26AD006D07F7 /* TopicDetailToolCell.swift */,
@@ -579,7 +579,7 @@
 				5333E1FA24AC26B1006D07F7 /* V2PhotoBrowserTransionPresent.swift in Sources */,
 				5333E20224AC26B1006D07F7 /* TopicDetailHeaderCell.swift in Sources */,
 				5333E21E24AC2739006D07F7 /* MemberViewController.swift in Sources */,
-				5333E20124AC26B1006D07F7 /* RightNodeTableViewCell.swift in Sources */,
+				5333E20124AC26B1006D07F7 /* MenuNodeTableViewCell.swift in Sources */,
 				5333E1BF24AC25BD006D07F7 /* XZWebViewViewController.swift in Sources */,
 				5333E23724AC2795006D07F7 /* MemberModel.swift in Sources */,
 				5333E1A624AC2302006D07F7 /* V2HitTestSlopButton.swift in Sources */,
@@ -592,7 +592,7 @@
 				5333E21824AC2739006D07F7 /* TopicDetailViewController.swift in Sources */,
 				5333E17724AC1C71006D07F7 /* LDTabBarController.m in Sources */,
 				5333E19B24AC2302006D07F7 /* UIView+Extension.swift in Sources */,
-				5333E22824AC2739006D07F7 /* RightViewController.swift in Sources */,
+				5333E22824AC2739006D07F7 /* MenuViewController.swift in Sources */,
 				5333E18524AC2142006D07F7 /* BaseModel.swift in Sources */,
 				5333E1E924AC26B1006D07F7 /* LogoutTableViewCell.swift in Sources */,
 				5333E21A24AC2739006D07F7 /* LoginViewController.swift in Sources */,

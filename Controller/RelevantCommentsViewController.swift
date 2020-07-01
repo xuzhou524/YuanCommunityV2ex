@@ -60,9 +60,7 @@ class RelevantCommentsViewController: UIViewController, UITableViewDelegate,UITa
         let tableView = UITableView()
         tableView.cancelEstimatedHeight()
         tableView.separatorStyle = .none
-        if #available(iOS 11.0, *) {
-            tableView.contentInsetAdjustmentBehavior = .never
-        }
+        tableView.contentInsetAdjustmentBehavior = .never
         tableView.backgroundColor = UIColor.clear
         tableView.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 0, right: 0)
         regClass(tableView, cell: TopicDetailCommentCell.self)

@@ -202,10 +202,7 @@ extension MainViewController:UITableViewDataSource,UITableViewDelegate {
         
         //如果在可视列表，则动画删除它
         self.tableView.beginUpdates()
-        
         self.tableView.deleteRows(at: [IndexPath(row: index!, section: 0)], with: .fade)
-        
         self.tableView.endUpdates()
-        
     }
 }
