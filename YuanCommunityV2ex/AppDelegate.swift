@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         URLProtocol.registerClass(XZWebViewImageProtocol.self)
         #if DEBUG
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
         #else
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         #endif
