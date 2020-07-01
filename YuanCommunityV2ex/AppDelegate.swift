@@ -51,12 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         V2Client.sharedInstance.centerTabBarController = tabBarController
         
-        #if DEBUG
-            let fpsLabel = V2FPSLabel(frame: CGRect(x: 15, y: SCREEN_HEIGHT-40,width: 55,height: 20));
-            self.window?.addSubview(fpsLabel);
-        #else
-        #endif
-        
         SVProgressHUD.setForegroundColor(UIColor(white: 1, alpha: 1))
         SVProgressHUD.setBackgroundColor(UIColor(white: 0.15, alpha: 0.85))
         SVProgressHUD.setDefaultMaskType(.none)
