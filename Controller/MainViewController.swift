@@ -32,8 +32,8 @@ let MenuNodes = [
 
 class MainViewController: UIViewController {
 
+    var index: Int = 0
     var tab:String? = "all"
-    var titleTab:String? = "V2EX"
     var currentPage = 0
     var topicList:Array<TopicListModel>?
     
@@ -48,44 +48,19 @@ class MainViewController: UIViewController {
         tableView.dataSource = self
         return tableView
     }()
-    var menuTabView:CQMenuTabView?
-    
-    func sebCQMenuTabView(){
-        menuTabView = CQMenuTabView.init(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 44))
-        menuTabView?.titleFont = v2Font(16)
-        menuTabView?.showCursor = true
-        menuTabView?.cursorHeight = 30
-        menuTabView?.cursorWidth = 60
-        menuTabView?.speaceWidth = 12
-        menuTabView?.cursorStyle = .wrap
-        menuTabView?.layoutStyle = .wrapContent
-        menuTabView?.backgroundColor = XZSwiftColor.white
-        menuTabView?.cursorView.backgroundColor = XZSwiftColor.linksColor
-        menuTabView?.didSelctTitleColor = XZSwiftColor.white
-        menuTabView?.normaTitleColor = XZSwiftColor.leftNodeTintColor
-        menuTabView?.cursorView.layer.cornerRadius = 10
-        let titles = NSMutableArray()
-        for item in MenuNodes {
-            titles.add(item.nodeName as Any)
-        }
-        menuTabView?.titles = titles as? [Any]
-        view.addSubview(menuTabView!)
-        
-        menuTabView?.didTapItemAtIndexBlock = {(view,index) in
-            let nodeItem = MenuNodes[index]
-            self.tab = nodeItem.nodeTab
-            self.tableView.mj_header.beginRefreshing();
-        }
+
+    // 出现的时候马上调用
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let nodeItem = MenuNodes[index]
+        self.tab = nodeItem.nodeTab
+        self.tableView.mj_header.beginRefreshing();
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "V2EX"
-        if (titleTab != nil){
-            self.navigationItem.title = titleTab
-        }
         self.view.backgroundColor = XZSwiftColor.backgroudColor
-        self.sebCQMenuTabView()
  
         //监听程序即将进入前台运行、进入后台休眠 事件
         NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.applicationWillEnterForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
@@ -93,7 +68,7 @@ class MainViewController: UIViewController {
         
         self.view.addSubview(self.tableView);
         self.tableView.snp.makeConstraints{ (make) -> Void in
-            make.top.equalTo(self.view).offset(54);
+            make.top.equalTo(self.view).offset(10);
             make.right.bottom.left.equalTo(self.view);
         }
         self.tableView.mj_header = V2RefreshHeader(refreshingBlock: {[weak self] () -> Void in

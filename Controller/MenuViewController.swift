@@ -69,7 +69,7 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let node = self.menuNodes[indexPath.row];
         let mainVC = MainViewController()
         mainVC.tab = node.nodeTab
-        mainVC.titleTab = node.nodeName
+//        mainVC.titleTab = node.nodeName
         self.navigationController?.pushViewController(mainVC, animated: true)
     }
 }
