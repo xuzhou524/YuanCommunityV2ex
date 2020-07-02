@@ -14,10 +14,26 @@ import Ji
 import MJRefresh
 import AlamofireObjectMapper
 
+let MenuNodes = [
+    menuNodeModel(nodeName: "全部", nodeTab: "all"),
+    menuNodeModel(nodeName: "最热", nodeTab: "hot"),
+    menuNodeModel(nodeName: "技术", nodeTab: "tech"),
+    menuNodeModel(nodeName: "创意", nodeTab: "creative"),
+    menuNodeModel(nodeName: "好玩", nodeTab: "play"),
+    menuNodeModel(nodeName: "Apple", nodeTab: "apple"),
+    menuNodeModel(nodeName: "酷工作", nodeTab: "jobs"),
+    menuNodeModel(nodeName: "问与答", nodeTab: "qna"),
+    menuNodeModel(nodeName: "城市", nodeTab: "city"),
+    menuNodeModel(nodeName: "交易", nodeTab: "deals"),
+    menuNodeModel(nodeName: "R2", nodeTab: "r2"),
+    menuNodeModel(nodeName: "节点", nodeTab: "nodes"),
+    menuNodeModel(nodeName: "关注", nodeTab: "members"),
+]
+
 class MainViewController: UIViewController {
 
     var tab:String? = "all"
-    var titleTab:String? = "首页"
+    var titleTab:String? = "V2EX"
     var currentPage = 0
     var topicList:Array<TopicListModel>?
     
@@ -32,13 +48,37 @@ class MainViewController: UIViewController {
         tableView.dataSource = self
         return tableView
     }()
+    var menuTabView:CQMenuTabView?
+    
+    func sebCQMenuTabView(){
+        menuTabView = CQMenuTabView.init(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 44))
+        menuTabView?.titleFont = v2Font(16)
+        menuTabView?.showCursor = true
+        menuTabView?.cursorHeight = 32
+        menuTabView?.cursorWidth = 60
+        menuTabView?.speaceWidth = 12
+        menuTabView?.cursorStyle = .wrap
+        menuTabView?.layoutStyle = .wrapContent
+        menuTabView?.backgroundColor = XZSwiftColor.white
+        menuTabView?.cursorView.backgroundColor = XZSwiftColor.backgroudColor
+        menuTabView?.cursorView.layer.cornerRadius = 16
+        let titles = NSMutableArray()
+        for item in MenuNodes {
+            titles.add(item.nodeName as Any)
+        }
+        menuTabView?.titles = titles as? [Any]
+        view.addSubview(menuTabView!)
+//        menuTabView?.didTapItemAtIndexBlock
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "首页"
+        self.navigationItem.title = "V2EX"
         if (titleTab != nil){
-            self.title = titleTab
+            self.navigationItem.title = titleTab
         }
+        self.view.backgroundColor = XZSwiftColor.backgroudColor
+        self.sebCQMenuTabView()
  
         //监听程序即将进入前台运行、进入后台休眠 事件
         NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.applicationWillEnterForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
@@ -46,7 +86,8 @@ class MainViewController: UIViewController {
         
         self.view.addSubview(self.tableView);
         self.tableView.snp.makeConstraints{ (make) -> Void in
-            make.top.right.bottom.left.equalTo(self.view);
+            make.top.equalTo(self.view).offset(44);
+            make.right.bottom.left.equalTo(self.view);
         }
         self.tableView.mj_header = V2RefreshHeader(refreshingBlock: {[weak self] () -> Void in
             self?.refresh()

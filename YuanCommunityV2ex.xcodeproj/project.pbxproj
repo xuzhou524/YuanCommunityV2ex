@@ -106,6 +106,7 @@
 		5333E24324AC29A3006D07F7 /* font.css in Resources */ = {isa = PBXBuildFile; fileRef = 5333E23F24AC29A3006D07F7 /* font.css */; };
 		5333E24424AC29A3006D07F7 /* darkStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 5333E24024AC29A3006D07F7 /* darkStyle.css */; };
 		5333E24724AC695C006D07F7 /* YuanCommunityV2ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5333E24624AC695C006D07F7 /* YuanCommunityV2ex.m */; };
+		5333E24A24AD84AB006D07F7 /* CQMenuTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5333E24824AD84AB006D07F7 /* CQMenuTabView.m */; };
 		81350DA10C4251CBC7C5FE3C /* libPods-YuanCommunityV2ex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5618883ED402FDD93BE77FE0 /* libPods-YuanCommunityV2ex.a */; };
 /* End PBXBuildFile section */
 
@@ -218,6 +219,8 @@
 		5333E24024AC29A3006D07F7 /* darkStyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = darkStyle.css; sourceTree = "<group>"; };
 		5333E24524AC695C006D07F7 /* YuanCommunityV2ex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YuanCommunityV2ex.h; sourceTree = "<group>"; };
 		5333E24624AC695C006D07F7 /* YuanCommunityV2ex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuanCommunityV2ex.m; sourceTree = "<group>"; };
+		5333E24824AD84AB006D07F7 /* CQMenuTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQMenuTabView.m; sourceTree = "<group>"; };
+		5333E24924AD84AB006D07F7 /* CQMenuTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQMenuTabView.h; sourceTree = "<group>"; };
 		5618883ED402FDD93BE77FE0 /* libPods-YuanCommunityV2ex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YuanCommunityV2ex.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC09CA7FC3D5AC2B0136A104 /* Pods-YuanCommunityV2ex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuanCommunityV2ex.debug.xcconfig"; path = "Target Support Files/Pods-YuanCommunityV2ex/Pods-YuanCommunityV2ex.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -360,6 +363,8 @@
 				5333E23C24AC29A3006D07F7 /* CSS */,
 				5333E16E24AC1C70006D07F7 /* LDColor.h */,
 				5333E17224AC1C70006D07F7 /* LDColor.m */,
+				5333E24924AD84AB006D07F7 /* CQMenuTabView.h */,
+				5333E24824AD84AB006D07F7 /* CQMenuTabView.m */,
 				5333E16D24AC1C70006D07F7 /* LDNavigationController.h */,
 				5333E17124AC1C70006D07F7 /* LDNavigationController.m */,
 				5333E17024AC1C70006D07F7 /* LDTabBar.h */,
@@ -584,6 +589,7 @@
 				5333E18524AC2142006D07F7 /* BaseModel.swift in Sources */,
 				5333E1E924AC26B1006D07F7 /* LogoutTableViewCell.swift in Sources */,
 				5333E21A24AC2739006D07F7 /* LoginViewController.swift in Sources */,
+				5333E24A24AD84AB006D07F7 /* CQMenuTabView.m in Sources */,
 				5333E23924AC2795006D07F7 /* TopicDetailModel.swift in Sources */,
 				5333E20324AC26B1006D07F7 /* V2LoadingView.swift in Sources */,
 				5333E1BC24AC24DA006D07F7 /* Observable+Extension.swift in Sources */,
