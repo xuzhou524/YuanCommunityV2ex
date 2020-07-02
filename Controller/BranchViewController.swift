@@ -12,7 +12,7 @@ class BranchViewController: BaseViewController {
     var collectionView:UICollectionView?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "节点导航"
+        self.navigationItem.title = "节点"
         
         let layout = V2LeftAlignedCollectionViewFlowLayout();
         layout.sectionInset = UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15);

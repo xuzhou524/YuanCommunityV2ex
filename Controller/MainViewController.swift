@@ -54,21 +54,28 @@ class MainViewController: UIViewController {
         menuTabView = CQMenuTabView.init(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 44))
         menuTabView?.titleFont = v2Font(16)
         menuTabView?.showCursor = true
-        menuTabView?.cursorHeight = 32
+        menuTabView?.cursorHeight = 30
         menuTabView?.cursorWidth = 60
         menuTabView?.speaceWidth = 12
         menuTabView?.cursorStyle = .wrap
         menuTabView?.layoutStyle = .wrapContent
         menuTabView?.backgroundColor = XZSwiftColor.white
-        menuTabView?.cursorView.backgroundColor = XZSwiftColor.backgroudColor
-        menuTabView?.cursorView.layer.cornerRadius = 16
+        menuTabView?.cursorView.backgroundColor = XZSwiftColor.linksColor
+        menuTabView?.didSelctTitleColor = XZSwiftColor.white
+        menuTabView?.normaTitleColor = XZSwiftColor.leftNodeTintColor
+        menuTabView?.cursorView.layer.cornerRadius = 10
         let titles = NSMutableArray()
         for item in MenuNodes {
             titles.add(item.nodeName as Any)
         }
         menuTabView?.titles = titles as? [Any]
         view.addSubview(menuTabView!)
-//        menuTabView?.didTapItemAtIndexBlock
+        
+        menuTabView?.didTapItemAtIndexBlock = {(view,index) in
+            let nodeItem = MenuNodes[index]
+            self.tab = nodeItem.nodeTab
+            self.tableView.mj_header.beginRefreshing();
+        }
     }
     
     override func viewDidLoad() {
@@ -86,7 +93,7 @@ class MainViewController: UIViewController {
         
         self.view.addSubview(self.tableView);
         self.tableView.snp.makeConstraints{ (make) -> Void in
-            make.top.equalTo(self.view).offset(44);
+            make.top.equalTo(self.view).offset(54);
             make.right.bottom.left.equalTo(self.view);
         }
         self.tableView.mj_header = V2RefreshHeader(refreshingBlock: {[weak self] () -> Void in
