@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
         let style = PageStyle()
         style.isTitleViewScrollEnabled = true
         style.titleMargin = 10
-        style.titleInset = 15
+        style.titleInset = 12
         style.titleFont = v2Font(16)
         
         style.isShowCoverView = true
