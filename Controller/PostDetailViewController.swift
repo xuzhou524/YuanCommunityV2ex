@@ -463,11 +463,11 @@ extension PostDetailViewController: V2ActivityViewDataSource {
     }
     func V2ActivityView(_ activityView:V2ActivityViewController ,viewForFooterInSection section: Int) ->UIView?{
         let view = UIView()
-        view.backgroundColor = XZSwiftColor.buttonBackgroundColor
+        view.backgroundColor = XZSwiftColor.linksColor
         
         let label = UILabel()
         label.font = v2Font(18)
-        label.text = "回  复"
+        label.text = "回复"
         label.textAlignment = .center
         label.textColor = UIColor.white
         view.addSubview(label)

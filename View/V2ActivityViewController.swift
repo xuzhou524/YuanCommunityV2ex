@@ -120,7 +120,7 @@ class V2ActivityViewController: UIViewController ,UIViewControllerTransitioningD
         }
         
         let cancelButton = UIButton()
-        cancelButton.setTitle("取  消", for: .normal)
+        cancelButton.setTitle("取消", for: .normal)
         cancelButton.titleLabel?.font = v2Font(18)
         cancelButton.setTitleColor(XZSwiftColor.leftNodeTintColor, for: .normal)
         cancelPanel.addSubview(cancelButton)
