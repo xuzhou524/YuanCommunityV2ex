@@ -20,6 +20,9 @@ class BranchViewController: BaseViewController {
         self.collectionView!.dataSource = self
         self.collectionView!.delegate = self
         self.view.addSubview(self.collectionView!)
+        self.collectionView!.snp.makeConstraints{ (make) -> Void in
+            make.top.right.bottom.left.equalTo(self.view);
+        }
         
         self.collectionView!.register(NodeTableViewCell.self, forCellWithReuseIdentifier: "cell")
         self.collectionView!.register(NodeCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "nodeGroupNameView")

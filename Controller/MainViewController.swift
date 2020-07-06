@@ -53,8 +53,10 @@ class MainViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let nodeItem = MenuNodes[index]
-        self.tab = nodeItem.nodeTab
-        self.tableView.mj_header.beginRefreshing();
+        if self.tab != nodeItem.nodeTab {
+            self.tab = nodeItem.nodeTab
+            self.tableView.mj_header.beginRefreshing();
+        }
     }
     
     override func viewDidLoad() {

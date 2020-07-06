@@ -38,7 +38,7 @@ class HomeViewController: UIViewController {
         }
 
         // 创建对应的DNSPageView，并设置它的frame
-        let pageView = PageView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT), style: style, titles: titles as! [String], childViewControllers: children)
+        let pageView = PageView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - 44 - UIApplication.shared.statusBarFrame.size.height - 44), style: style, titles: titles as! [String], childViewControllers: children)
         view.addSubview(pageView)
     }
 }

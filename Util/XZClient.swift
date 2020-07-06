@@ -31,4 +31,12 @@ class XZClient: NSObject {
         }
         return currentNavigationController
     }
+    
+    public func isiPhoneXMore() -> Bool {
+        var isMore:Bool = false
+        if #available(iOS 11.0, *) {
+            isMore = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0.00 > CGFloat(0.00)
+        }
+        return isMore
+    }
 }
