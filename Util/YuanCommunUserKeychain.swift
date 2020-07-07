@@ -35,7 +35,7 @@ class YuanCommunUserKeychain {
         self.addUser(user)
     }
     
-    static let usersKey = "me.Aaron_xu.testDict"
+    static let usersKey = "me.Aaron_xu.testDicts"
     func saveUsersDict(){
         let data = NSMutableData()
         let archiver = NSKeyedArchiver(forWritingWith: data)
