@@ -229,7 +229,7 @@ extension LoginViewController {
 
         let v2exLabel = UILabel()
         v2exLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 25)!;
-        v2exLabel.text = "猿社区"
+        v2exLabel.text = "猿驿站"
         v2exLabel.textColor = XZSwiftColor.leftNodeTintColor
         self.view.addSubview(v2exLabel);
         v2exLabel.snp.makeConstraints{ (make) -> Void in

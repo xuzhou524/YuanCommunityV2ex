@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5333E14A24AB406A006D07F7"
-               BuildableName = "&#x733f;&#x793e;&#x533a;.app"
+               BuildableName = "&#x733f;&#x9a7f;&#x7ad9;.app"
                BlueprintName = "YuanCommunityV2ex"
                ReferencedContainer = "container:YuanCommunityV2ex.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5333E14A24AB406A006D07F7"
-            BuildableName = "&#x733f;&#x793e;&#x533a;.app"
+            BuildableName = "&#x733f;&#x9a7f;&#x7ad9;.app"
             BlueprintName = "YuanCommunityV2ex"
             ReferencedContainer = "container:YuanCommunityV2ex.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5333E14A24AB406A006D07F7"
-            BuildableName = "&#x733f;&#x793e;&#x533a;.app"
+            BuildableName = "&#x733f;&#x9a7f;&#x7ad9;.app"
             BlueprintName = "YuanCommunityV2ex"
             ReferencedContainer = "container:YuanCommunityV2ex.xcodeproj">
          </BuildableReference>
