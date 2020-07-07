@@ -239,7 +239,7 @@ extension LoginViewController {
 
         let v2exSummaryLabel = UILabel()
         v2exSummaryLabel.font = v2Font(13);
-        v2exSummaryLabel.text = "V2EX - 程序猿的工作社区"
+        v2exSummaryLabel.text = "V2EX - 程序员的工作者驿站"
         self.view.addSubview(v2exSummaryLabel);
         v2exSummaryLabel.snp.makeConstraints{ (make) -> Void in
             make.centerX.equalTo(self.view)
