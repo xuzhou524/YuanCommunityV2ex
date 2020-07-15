@@ -38,7 +38,6 @@
     self = [super init];
     if (self) {
         #ifdef DEBUG
-        [self views];
         #else
         [self views];
         #endif

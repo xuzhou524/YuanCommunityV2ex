@@ -38,7 +38,7 @@ class MessageRemindViewController: BaseViewController,UITableViewDataSource,UITa
             self?.refresh()
         })
         self.showLoadingView()
-        self.tableView.mj_header.beginRefreshing();
+        refresh()
         
         self.view.backgroundColor = XZSwiftColor.backgroudColor
         self.tableView.backgroundColor = XZSwiftColor.backgroudColor
