@@ -838,7 +838,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xuzhou.V2ex-Swift";
 				PRODUCT_NAME = "猿驿站";
 				SWIFT_OBJC_BRIDGING_HEADER = "Util/YuanCommunityV2ex-Bridging-Header.h";
@@ -863,7 +863,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xuzhou.V2ex-Swift";
 				PRODUCT_NAME = "猿驿站";
 				SWIFT_OBJC_BRIDGING_HEADER = "Util/YuanCommunityV2ex-Bridging-Header.h";
