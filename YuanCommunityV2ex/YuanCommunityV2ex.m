@@ -99,6 +99,7 @@
 
 - (void)hide{
     ///来个渐显动画
+    [_adViewController dismissViewControllerAnimated:YES completion:nil];
     [UIView animateWithDuration:0.3 animations:^{
         self.window.alpha = 0;
     } completion:^(BOOL finished) {

@@ -229,7 +229,7 @@ extension LoginViewController {
 
         let v2exLabel = UILabel()
         v2exLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 25)!;
-        v2exLabel.text = "猿驿站"
+        v2exLabel.text = "猿社区"
         v2exLabel.textColor = XZSwiftColor.leftNodeTintColor
         self.view.addSubview(v2exLabel);
         v2exLabel.snp.makeConstraints{ (make) -> Void in
@@ -239,7 +239,7 @@ extension LoginViewController {
 
         let v2exSummaryLabel = UILabel()
         v2exSummaryLabel.font = v2Font(13);
-        v2exSummaryLabel.text = "V2EX - 程序员的工作者驿站"
+        v2exSummaryLabel.text = "V2EX - 程序员的工作者社区"
         self.view.addSubview(v2exSummaryLabel);
         v2exSummaryLabel.snp.makeConstraints{ (make) -> Void in
             make.centerX.equalTo(self.view)
