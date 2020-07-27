@@ -114,6 +114,7 @@
 		536D5EF024ADC53C00F5D1B8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536D5EE824ADC53B00F5D1B8 /* Helper.swift */; };
 		536D5EF224ADC53C00F5D1B8 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536D5EEA24ADC53B00F5D1B8 /* PageView.swift */; };
 		536D5EF424ADC59300F5D1B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536D5EF324ADC59300F5D1B8 /* HomeViewController.swift */; };
+		53A7EFD424CEA9730095FE71 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A7EFD324CEA9730095FE71 /* SettingViewController.swift */; };
 		81350DA10C4251CBC7C5FE3C /* libPods-YuanCommunityV2ex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5618883ED402FDD93BE77FE0 /* libPods-YuanCommunityV2ex.a */; };
 /* End PBXBuildFile section */
 
@@ -235,6 +236,7 @@
 		536D5EE824ADC53B00F5D1B8 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		536D5EEA24ADC53B00F5D1B8 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		536D5EF324ADC59300F5D1B8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		53A7EFD324CEA9730095FE71 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		5618883ED402FDD93BE77FE0 /* libPods-YuanCommunityV2ex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YuanCommunityV2ex.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC09CA7FC3D5AC2B0136A104 /* Pods-YuanCommunityV2ex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuanCommunityV2ex.debug.xcconfig"; path = "Target Support Files/Pods-YuanCommunityV2ex/Pods-YuanCommunityV2ex.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -319,6 +321,7 @@
 				5333E21124AC2737006D07F7 /* UserViewController.swift */,
 				5333E20D24AC2737006D07F7 /* WritingViewController.swift */,
 				5333E1BE24AC25BD006D07F7 /* XZWebViewViewController.swift */,
+				53A7EFD324CEA9730095FE71 /* SettingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 				5333E22824AC2739006D07F7 /* MenuViewController.swift in Sources */,
 				5333E18524AC2142006D07F7 /* BaseModel.swift in Sources */,
 				5333E1E924AC26B1006D07F7 /* LogoutTableViewCell.swift in Sources */,
+				53A7EFD424CEA9730095FE71 /* SettingViewController.swift in Sources */,
 				5333E21A24AC2739006D07F7 /* LoginViewController.swift in Sources */,
 				5333E23924AC2795006D07F7 /* TopicDetailModel.swift in Sources */,
 				5333E20324AC26B1006D07F7 /* V2LoadingView.swift in Sources */,
@@ -830,7 +834,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
 				INFOPLIST_FILE = YuanCommunityV2ex/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -855,7 +859,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6JC78V6G2N;
 				INFOPLIST_FILE = YuanCommunityV2ex/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

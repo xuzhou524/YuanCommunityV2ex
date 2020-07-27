@@ -39,9 +39,11 @@
     if (self) {
         #ifdef DEBUG
         #else
-        [self views];
+        NSString * i = [[NSUserDefaults standardUserDefaults] objectForKey:@"com.xuzhou.advertising"];
+        if ([i intValue] == 0) {
+            [self views];
+        }
         #endif
-        
     }
     return self;
 }

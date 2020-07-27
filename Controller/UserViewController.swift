@@ -44,7 +44,7 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
         return 3
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return [1,2,3][section]
+        return [1,2,4][section]
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.section == 1 && indexPath.row == 2){
@@ -86,10 +86,10 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
             }
         }else {
             let cell = getCell(tableView, cell: LeftNodeTableViewCell.self, indexPath: indexPath)
-            cell.nodeNameLabel.text = ["节点","给个赞","版本号"][indexPath.row]
-            let names = ["ic_navigation","ic_givePraise","ic_settings_input_svideo"]
+            cell.nodeNameLabel.text = ["节点","给个赞","设置","版本号"][indexPath.row]
+            let names = ["ic_navigation","ic_givePraise","ic_givePraise","ic_settings_input_svideo"]
             cell.nodeImageView.image = UIImage(named: names[indexPath.row])
-            if indexPath.row == 2 {
+            if indexPath.row == 3 {
                 cell.isHiddenRightImage(hidden: true)
                 let infoDict = Bundle.main.infoDictionary
                 if let info = infoDict {
@@ -140,6 +140,8 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 #else
                     SKStoreReviewController.requestReview()
                 #endif
+            }else if indexPath.row == 2 {
+                self.navigationController?.pushViewController(SettingViewController(), animated: true)
             }
         }
     }
