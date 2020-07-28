@@ -452,7 +452,7 @@ extension PostDetailViewController: V2ActivityViewDataSource {
     }
     func V2ActivityView(_ activityView: V2ActivityViewController, ActivityAtIndexPath indexPath: IndexPath) -> V2Activity {
         return V2Activity(title: [
-            "屏蔽",
+            "举报",
             "收藏",
             "感谢",
             "分享",
@@ -497,12 +497,12 @@ extension PostDetailViewController: V2ActivityViewDataSource {
             if let topicId = self.model?.topicId  {
                 TopicDetailModel.ignoreTopicWithTopicId(topicId, completionHandler: {[weak self] (response) -> Void in
                     if response.success {
-                        V2Success("屏蔽成功")
+                        V2Success("举报并屏蔽成功")
                         self?.navigationController?.popViewController(animated: true)
                         self?.ignoreTopicHandler?(topicId)
                     }
                     else{
-                        V2Error("屏蔽失败")
+                        V2Error("举报失败")
                     }
                     })
             }

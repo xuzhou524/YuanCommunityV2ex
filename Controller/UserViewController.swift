@@ -87,7 +87,7 @@ class UserViewController: UIViewController,UITableViewDataSource,UITableViewDele
         }else {
             let cell = getCell(tableView, cell: LeftNodeTableViewCell.self, indexPath: indexPath)
             cell.nodeNameLabel.text = ["节点","给个赞","设置","版本号"][indexPath.row]
-            let names = ["ic_navigation","ic_givePraise","ic_givePraise","ic_settings_input_svideo"]
+            let names = ["ic_navigation","ic_givePraise","ic_setting","ic_settings_input_svideo"]
             cell.nodeImageView.image = UIImage(named: names[indexPath.row])
             if indexPath.row == 3 {
                 cell.isHiddenRightImage(hidden: true)
