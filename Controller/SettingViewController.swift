@@ -41,7 +41,7 @@ class SettingViewController: UIViewController,UITableViewDataSource,UITableViewD
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = getCell(tableView, cell: TitleSwitchTableViewCell.self, indexPath: indexPath)
-        cell.titleLabel.text = "广告设置"
+        cell.titleLabel.text = "屏蔽广告"
 
         if let switchOn = UserDefaults.standard.object(forKey: "com.xuzhou.advertising") {
             cell.sevenSwitch.setOn(((switchOn as! Int)  == 1) ? true : false , animated: true)
