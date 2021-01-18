@@ -76,7 +76,7 @@ DEPENDENCIES:
   - YYText
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - AlamofireObjectMapper
     - CXSwipeGestureRecognizer
@@ -128,4 +128,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: f71fa292bf980fa6d0e2cac27abe4bb33e62900b
 
-COCOAPODS: 1.7.3
+COCOAPODS: 1.9.3

@@ -12,11 +12,4 @@
 + (UIColor *)colorWithR255:(NSInteger)red G255:(NSInteger)green B255:(NSInteger)blue A255:(NSInteger)alpha;
 + (UIImage *)createImageWithColor:(UIColor *)color;
 + (UIImage *)createImageWithColor:(UIColor *)color withSize:(CGSize)size;
-
-
-+ (UIColor *)backgroudColor;
-+ (UIColor *)separatorColor;
-
-+ (UIColor *)ldgray69;
-
 @end

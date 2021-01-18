@@ -37,16 +37,4 @@
     return theImage;
 }
 
-
-+ (UIColor *)backgroudColor {
-    return [LDColor colorWithR255:244 G255:244 B255:247 A255:255];
-}
-+ (UIColor *)separatorColor {
-    return [LDColor colorWithR255:242 G255:243 B255:245 A255:255];
-}
-
-+ (UIColor *)ldgray69{
-    return [LDColor colorWithR255:69 G255:69 B255:69 A255:255];
-}
-
 @end

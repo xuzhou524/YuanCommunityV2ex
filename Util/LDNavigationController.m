@@ -26,7 +26,7 @@
     //navigationBar Title 样式
     [self.navigationBar setTitleTextAttributes:@{
                                                   NSFontAttributeName : LDFont2(18),
-                                                  NSForegroundColorAttributeName : [LDColor ldgray69]
+                                                  NSForegroundColorAttributeName : [LDColor colorWithR255:69 G255:69 B255:69 A255:255]
                                                   }];
         
     [self.navigationBar setShadowImage:[UIImage new]];
