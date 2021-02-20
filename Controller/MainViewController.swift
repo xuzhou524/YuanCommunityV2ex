@@ -122,6 +122,12 @@ class MainViewController: UIViewController {
                     switch err {
                     case .needs2FA:
                         self.navigationController?.present(ValidationViewController(), animated: true, completion: nil);
+                    case .needsCloudflareChecking:
+                        let controller = CloudflareCheckingController()
+                        controller.completion = {[weak self] in
+                            self?.refresh()
+                        }
+                        self.navigationController?.present(controller, animated: true, completion: nil)
                     default:
                         SVProgressHUD.showError(withStatus: err.rawString())
                     }
