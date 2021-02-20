@@ -34,43 +34,43 @@ class XZSwiftColor: UIColor{
     
     static var backgroudColor : UIColor{
         get{
-            return colorWith255RGB(242, g: 243, b: 245);
+            return UIColor.init(lightColorStr: "EBEBEB", darkColor: "191919")
         }
     }
     
     static var sepColor : UIColor{
         get{
-            return colorWith255RGB(220, g: 220, b: 220);
+            return UIColor.init(lightColorStr: "DCDCDC", darkColor: "DCDCDC")
         }
     }
     
     static var linksColor : UIColor {
         get {
-            return colorWith255RGB(119, g: 128, b: 135)
+            return UIColor.init(lightColorStr: "778087", darkColor: "778087")
         }
     }
     
     static var noticePointColor : UIColor {
         get {
-            return colorWith255RGB(207, g: 70, b: 71)
+            return UIColor.init(lightColorStr: "CF4647", darkColor: "CF4647")
         }
     }
     
     static var buttonBackgroundColor : UIColor {
         get {
-            return colorWith255RGB(85, g: 172, b: 238)
+            return UIColor.init(lightColorStr: "55ACEE", darkColor: "55ACEE")
         }
     }
     
     static var leftNodeTintColor : UIColor {
         get {
-            return colorWith255RGB(51, g: 51, b: 51)
+            return UIColor.init(lightColorStr: "333333", darkColor: "EBEBEB")
         }
     }
 
     static var topicListDateColor : UIColor{
         get{
-            return colorWith255RGB(173, g: 173, b: 173);
+            return UIColor.init(lightColorStr: "ADADAD", darkColor: "ADADAD")
         }
     }
 
