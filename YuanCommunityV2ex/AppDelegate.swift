@@ -8,19 +8,22 @@
 
 import UIKit
 import SVProgressHUD
+
 import GoogleMobileAds
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,GADFullScreenContentDelegate {
 
     var window: UIWindow?
+    var appOpenAd: GADAppOpenAd?
+    
+    var adWindow: UIWindow?
+    var adViewController: UIViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         URLProtocol.registerClass(XZWebViewImageProtocol.self)
-        #if DEBUG
-        #else
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
-        #endif
+
         let tabBarController = LDTabBarController()
         
         let vc1 = HomeViewController()
@@ -63,7 +66,66 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SVProgressHUD.setDefaultMaskType(.none)
         SVProgressHUD.setMinimumDismissTimeInterval(1.5)
         SVProgressHUD.setContainerView(self.window!)
+        
+        #if DEBUG
+        #else
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        self.tryToPresentAd()
+        #endif
+        
         return true
     }
-}
+    
+    func requestAppOpenAd() {
+        self.appOpenAd = nil
+        GADAppOpenAd.load(withAdUnitID: "ca-app-pub-9353975206269682/6262169139", request: GADRequest(), orientation: .portrait) { (appOpenAd, error) in
+            if (error == nil) {
+                self.appOpenAd = appOpenAd
+                self.appOpenAd?.fullScreenContentDelegate = self
+                self.tryToPresentAd()
+            }else{
+                print(error ?? "")
+                return;
+            }
+        }
+    }
+    
+    func tryToPresentAd() {
+        if (self.appOpenAd != nil) {
+            adViewController = UIViewController()
+            
+            adWindow = UIWindow.init(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT))
+            adWindow?.rootViewController = adViewController
+            adWindow?.rootViewController?.view.backgroundColor = UIColor.clear;
+            adWindow?.rootViewController?.view.isUserInteractionEnabled = false;
+            adWindow?.isHidden = false
+            adWindow?.alpha = 1
+            
+            self.appOpenAd?.present(fromRootViewController: (adWindow?.rootViewController)!)
 
+        }else{
+            self.requestAppOpenAd()
+        }
+    }
+    
+    func adDidPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(timered), userInfo: nil, repeats: true)
+    }
+    
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        self.hide()
+    }
+
+    @objc func timered() {
+        self.hide()
+    }
+    
+    func hide() {
+        adViewController?.dismiss(animated: true, completion: nil)
+        UIView.animate(withDuration: 0.3) {
+            self.adWindow?.alpha = 0;
+        } completion: { (e) in
+            self.adWindow?.isHidden = true
+        }
+    }
+}

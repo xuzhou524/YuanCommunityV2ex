@@ -105,7 +105,6 @@
 		5333E24224AC29A3006D07F7 /* lightStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 5333E23E24AC29A3006D07F7 /* lightStyle.css */; };
 		5333E24324AC29A3006D07F7 /* font.css in Resources */ = {isa = PBXBuildFile; fileRef = 5333E23F24AC29A3006D07F7 /* font.css */; };
 		5333E24424AC29A3006D07F7 /* darkStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 5333E24024AC29A3006D07F7 /* darkStyle.css */; };
-		5333E24724AC695C006D07F7 /* YuanCommunityV2ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5333E24624AC695C006D07F7 /* YuanCommunityV2ex.m */; };
 		536D5EEB24ADC53C00F5D1B8 /* PageViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536D5EE224ADC53B00F5D1B8 /* PageViewManager.swift */; };
 		536D5EEC24ADC53C00F5D1B8 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536D5EE424ADC53B00F5D1B8 /* PageContentView.swift */; };
 		536D5EED24ADC53C00F5D1B8 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536D5EE524ADC53B00F5D1B8 /* PageTitleView.swift */; };
@@ -227,8 +226,6 @@
 		5333E23E24AC29A3006D07F7 /* lightStyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = lightStyle.css; sourceTree = "<group>"; };
 		5333E23F24AC29A3006D07F7 /* font.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = font.css; sourceTree = "<group>"; };
 		5333E24024AC29A3006D07F7 /* darkStyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = darkStyle.css; sourceTree = "<group>"; };
-		5333E24524AC695C006D07F7 /* YuanCommunityV2ex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YuanCommunityV2ex.h; sourceTree = "<group>"; };
-		5333E24624AC695C006D07F7 /* YuanCommunityV2ex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuanCommunityV2ex.m; sourceTree = "<group>"; };
 		536D5EE224ADC53B00F5D1B8 /* PageViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewManager.swift; sourceTree = "<group>"; };
 		536D5EE324ADC53B00F5D1B8 /* DNSPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNSPageView.h; sourceTree = "<group>"; };
 		536D5EE424ADC53B00F5D1B8 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
@@ -299,8 +296,6 @@
 				5333E15C24AB406F006D07F7 /* LaunchScreen.storyboard */,
 				5333E15F24AB406F006D07F7 /* Info.plist */,
 				5333E15724AB406A006D07F7 /* YuanCommunityV2ex.xcdatamodeld */,
-				5333E24524AC695C006D07F7 /* YuanCommunityV2ex.h */,
-				5333E24624AC695C006D07F7 /* YuanCommunityV2ex.m */,
 			);
 			path = YuanCommunityV2ex;
 			sourceTree = "<group>";
@@ -645,7 +640,6 @@
 				5333E1F424AC26B1006D07F7 /* V2PhotoBrowser.swift in Sources */,
 				5333E18924AC2227006D07F7 /* UserModel.swift in Sources */,
 				5333E1F124AC26B1006D07F7 /* V2RefreshFooter.swift in Sources */,
-				5333E24724AC695C006D07F7 /* YuanCommunityV2ex.m in Sources */,
 				5333E22224AC2739006D07F7 /* BranchTopicListViewController.swift in Sources */,
 				5333E19D24AC2302006D07F7 /* XZClient.swift in Sources */,
 				5333E1F824AC26B1006D07F7 /* V2PhotoBrowserSwipeInteractiveTransition.swift in Sources */,
@@ -852,7 +846,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xuzhou.V2ex-Swift";
 				PRODUCT_NAME = "猿社区";
 				SWIFT_OBJC_BRIDGING_HEADER = "Util/YuanCommunityV2ex-Bridging-Header.h";
@@ -877,7 +871,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xuzhou.V2ex-Swift";
 				PRODUCT_NAME = "猿社区";
 				SWIFT_OBJC_BRIDGING_HEADER = "Util/YuanCommunityV2ex-Bridging-Header.h";
