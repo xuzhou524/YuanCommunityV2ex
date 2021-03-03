@@ -66,11 +66,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GADFullScreenContentDelega
         SVProgressHUD.setDefaultMaskType(.none)
         SVProgressHUD.setMinimumDismissTimeInterval(1.5)
         SVProgressHUD.setContainerView(self.window!)
-        
+
         #if DEBUG
         #else
         GADMobileAds.sharedInstance().start(completionHandler: nil)
-        self.tryToPresentAd()
+        let key:String = (UserDefaults.standard.object(forKey: "com.xuzhou.advertising") ?? "0") as! String
+        if Int(key) == 0 {
+            self.tryToPresentAd()
+        }
         #endif
         
         return true
