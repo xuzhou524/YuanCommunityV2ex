@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		530B57B025EF5572007287A7 /* YuanCommunityV2ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 530B57AF25EF5572007287A7 /* YuanCommunityV2ex.m */; };
 		5333E14F24AB406A006D07F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E14E24AB406A006D07F7 /* AppDelegate.swift */; };
 		5333E15324AB406A006D07F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333E15224AB406A006D07F7 /* ViewController.swift */; };
 		5333E15624AB406A006D07F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5333E15424AB406A006D07F7 /* Main.storyboard */; };
@@ -122,8 +121,6 @@
 
 /* Begin PBXFileReference section */
 		2C16B37FF9E2D0092F979F2A /* Pods-YuanCommunityV2ex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuanCommunityV2ex.release.xcconfig"; path = "Target Support Files/Pods-YuanCommunityV2ex/Pods-YuanCommunityV2ex.release.xcconfig"; sourceTree = "<group>"; };
-		530B57AE25EF5572007287A7 /* YuanCommunityV2ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YuanCommunityV2ex.h; sourceTree = "<group>"; };
-		530B57AF25EF5572007287A7 /* YuanCommunityV2ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YuanCommunityV2ex.m; sourceTree = "<group>"; };
 		5333E14B24AB406A006D07F7 /* 猿社区.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "猿社区.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5333E14E24AB406A006D07F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5333E15224AB406A006D07F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -298,8 +295,6 @@
 				5333E15A24AB406F006D07F7 /* Assets.xcassets */,
 				5333E15C24AB406F006D07F7 /* LaunchScreen.storyboard */,
 				5333E15F24AB406F006D07F7 /* Info.plist */,
-				530B57AE25EF5572007287A7 /* YuanCommunityV2ex.h */,
-				530B57AF25EF5572007287A7 /* YuanCommunityV2ex.m */,
 				5333E15724AB406A006D07F7 /* YuanCommunityV2ex.xcdatamodeld */,
 			);
 			path = YuanCommunityV2ex;
@@ -673,7 +668,6 @@
 				5333E22524AC2739006D07F7 /* MessageRemindViewController.swift in Sources */,
 				5333E19E24AC2302006D07F7 /* V2LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				536D5EF424ADC59300F5D1B8 /* HomeViewController.swift in Sources */,
-				530B57B025EF5572007287A7 /* YuanCommunityV2ex.m in Sources */,
 				5333E19A24AC2302006D07F7 /* V2EXMentionedBindingParser.swift in Sources */,
 				5333E1FB24AC26B1006D07F7 /* NotificationMenuButton.swift in Sources */,
 				5333E1BD24AC24DA006D07F7 /* XZTargetType.swift in Sources */,
