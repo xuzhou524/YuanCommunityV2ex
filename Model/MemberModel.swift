@@ -194,7 +194,10 @@ class MemberRepliesModel: NSObject ,BaseHtmlModelProtocol{
             }
         }
         self.topicId = topicIdUrl
-        self.date = rootNode.xPath("./table/tr/td/div/span")[0].content
+        let array:[JiNode] = rootNode.xPath("./table/tr/td/div/span")
+        if array.count > 0 {
+            self.date = array[0].content
+        }
     }
 }
 
