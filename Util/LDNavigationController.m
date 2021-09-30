@@ -20,16 +20,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //navigationBar 背景颜色（或者可以用图片
-    [self.navigationBar setBackgroundImage:[LDColor createImageWithColor:[LDColor whiteColor]]
-                             forBarMetrics:UIBarMetricsDefault];
-    //navigationBar Title 样式
-    [self.navigationBar setTitleTextAttributes:@{
-                                                  NSFontAttributeName : LDFont2(18),
-                                                  NSForegroundColorAttributeName : [LDColor colorWithR255:69 G255:69 B255:69 A255:255]
-                                                  }];
+    if (@available(iOS 15.0, *)) {
+        UINavigationBarAppearance * appearance = [UINavigationBarAppearance new];
+        [appearance configureWithOpaqueBackground];
+        appearance.backgroundColor = [LDColor whiteColor];
+        appearance.shadowImage = [LDColor createImageWithColor:[LDColor whiteColor]];
+        appearance.titleTextAttributes = @{
+            NSFontAttributeName : LDFont2(18),
+            NSForegroundColorAttributeName : [LDColor colorWithR255:69 G255:69 B255:69 A255:255]
+        };
         
-    [self.navigationBar setShadowImage:[UIImage new]];
+        self.navigationBar.scrollEdgeAppearance = appearance;
+        self.navigationBar.standardAppearance = appearance;
+    }else{
+        //navigationBar 背景颜色（或者可以用图片
+        [self.navigationBar setBackgroundImage:[LDColor createImageWithColor:[LDColor whiteColor]]
+                                 forBarMetrics:UIBarMetricsDefault];
+        //navigationBar Title 样式
+        [self.navigationBar setTitleTextAttributes:@{
+                                                      NSFontAttributeName : LDFont2(18),
+                                                      NSForegroundColorAttributeName : [LDColor colorWithR255:69 G255:69 B255:69 A255:255]
+                                                      }];
+            
+        [self.navigationBar setShadowImage:[UIImage new]];
+    }
 }
 
 #pragma mark 返回按钮
